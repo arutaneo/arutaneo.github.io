@@ -126,6 +126,10 @@ header img {
     width: 100%;
 }
 
+.keyword {
+    text-align: center;
+}
+
 
 /*新着情報など(終)*/
 
@@ -203,6 +207,10 @@ h1 {
     font-size: 21pt;
 }
 
+#main-text-date {
+    text-align: right;
+}
+
 h2 {
     font-size: 21pt;
     position: relative;
@@ -242,6 +250,15 @@ h2:after {
 }
 
 @media screen and (max-width:600px) {
+    body {
+        width: 100%
+    }
+    main {
+        width: 100%;
+        margin: 20px 0 0 0;
+        line-height: 2em;
+        padding: 0;
+    }
     #container {
         flex-direction: column;
     }
