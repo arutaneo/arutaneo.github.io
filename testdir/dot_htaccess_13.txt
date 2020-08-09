@@ -1,2 +1,0 @@
-#Options +IncludesNOEXEC
-AddHandler server-parsed .html
