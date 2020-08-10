@@ -26,9 +26,10 @@
         line-height: 3em;
     }
     
-    #side {
-        width: 30%;
+    #sideplus {
+        flex-direction: column;
         margin: 20px 50px 0 0;
+        width: 30%;
     }
     
     #sub {
