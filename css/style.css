@@ -1,5 +1,24 @@
     /*全体のレイアウト(始)*/
     
+    ol {
+        list-style-type: decimal;
+        margin-left: 20px;
+    }
+    
+    ul {
+        list-style-type: disc;
+        margin-left: 20px;
+    }
+    
+    .img {
+        text-align: center;
+    }
+    
+    .img p {
+        text-align: left;
+        display: inline-block;
+    }
+    
     body {
         font-family: 'Roboto', 'Noto Sans JP';
         width: 100%;
@@ -30,6 +49,7 @@
         flex-direction: column;
         margin: 20px 50px 0 0;
         width: 30%;
+        text-align: center;
     }
     
     #sub {
@@ -159,8 +179,7 @@
         border: 1px solid skyblue;
         display: table;
         font-size: 95%;
-        margin-bottom: 1em;
-        margin-left: 1em;
+        margin: 0 auto 0 auto;
         padding: 10px;
         width: auto;
     }
@@ -201,6 +220,10 @@
         display: block;
         height: 10px;
         background: linear-gradient(135deg, lightgreen 10%, skyblue 20%);
+    }
+    
+    #next {
+        text-align: right;
     }
     
     .red {
@@ -250,7 +273,7 @@
         #container {
             flex-direction: column;
         }
-        #side {
+        #sideplus {
             width: 100%;
         }
     }
