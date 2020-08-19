@@ -67,6 +67,18 @@
         max-width: 100%;
         height: auto;
     }
+    
+    #ads {
+        display: flex;
+    }
+    
+    #ads-side {
+        flex-direction: column;
+    }
+    
+    #ads-side div {
+        margin: 0 0 20px 0;
+    }
     /*全体のレイアウト(終)*/
     /*ヘッダー(始)*/
     
@@ -221,9 +233,42 @@
         height: 10px;
         background: linear-gradient(135deg, lightgreen 10%, skyblue 20%);
     }
+    /*次へ(始)*/
     
     #next {
         text-align: right;
+    }
+    
+    #prev-next {
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    #prev {
+        text-align: left;
+    }
+    
+    .btn--orange,
+    a.btn--orange {
+        color: #fff;
+        background-color: #eb6100;
+    }
+    
+    .btn-orange:hover,
+    a.btn--orange:hover {
+        color: #fff;
+        background-color: #f56500;
+    }
+    
+    .btn {
+        border-radius: 100vh;
+        padding: 5px 5px;
+        text-decoration: none;
+    }
+    /*次へ(終)*/
+    
+    .center {
+        text-align: center;
     }
     
     .red {
@@ -275,6 +320,9 @@
         }
         #sideplus {
             width: 100%;
+        }
+        #ads-side {
+            display: none;
         }
     }
     /*スマホ画面(終)*/
