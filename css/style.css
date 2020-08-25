@@ -19,6 +19,13 @@
         display: inline-block;
     }
     
+    pre {
+        border-style: dotted;
+        border-color: skyblue;
+        border-width: 6px;
+        overflow: scroll;
+    }
+    
     body {
         font-family: 'Roboto', 'Noto Sans JP';
         width: 100%;
