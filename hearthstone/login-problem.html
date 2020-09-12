@@ -30,7 +30,9 @@
     <meta name="theme-color" content="#ffffff">
 
     <!--フォント-->
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&family=Roboto:wght@400;700&display=swap"
+        rel="stylesheet">
 
     <!--CSS-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css">
@@ -38,8 +40,7 @@
 
     <!--jQuery-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src="../js/common.js" type="text/javascript"></script>
-    <script src="../js/echo.min.js"></script>
+    <script>$(function () { $("#header").load("https://arutaneo.com/include/header.html"); $("#side").load("https://arutaneo.com/include/side.html"); $("#sub").load("https://arutaneo.com/include/sub.html"); $("#footer").load("https://arutaneo.com/include/footer.html"); });</script>
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-165447369-3"></script>
@@ -69,14 +70,27 @@
 
             <!--更新日(始)-->
             <div id="main-text-date">
-                <script src="../js/main-text-date.js" type="text/javascript"></script>
+                <script>var day = new Date(document.lastModified); var y = day.getFullYear(); var m = day.getMonth() + 1; var d = day.getDate(); document.write("Last Update: " + y + "年" + m + "月" + d + "日");</script>
             </div>
             <!--更新日(終)-->
 
-            <picture>
-                <source type="image/webp" src="login-problem-img/login-problem.webp">
-                <img src="login-problem-img/login-problem.jpeg" alt="login-problem-img">
-            </picture>
+            <p class="img">
+                <picture>
+                    <source type="image/webp" media="(min-width: 601px)"
+                        srcset="login-problem-img/login-problem-pc.webp">
+                    <source type="image/webp" media="(min-width: 301px)"
+                        srcset="login-problem-img/login-problem-tablet.webp">
+                    <source type="image/webp" media="(max-width: 300px)"
+                        srcset="login-problem-img/login-problem-mobile.webp">
+                    <source type="image/jpeg" media="(min-width: 601px)"
+                        srcset="login-problem-img/login-problem-pc.jpeg">
+                    <source type="image/jpeg" media="(min-width: 301px)"
+                        srcset="login-problem-img/login-problem-tablet.jpeg">
+                    <source type="image/jpeg" media="(max-width: 300px)"
+                        srcset="login-problem-img/login-problem-mobile.jpeg">
+                    <img src="login-problem-img/login-problem-pc.jpeg" alt="login-problem-img">
+                </picture>
+            </p>
 
             <section>
                 <p>スマホ版ハースストーンで下の画像のように毎回ログイン画面が出てしまう問題の解決方法を教えします。</p>
@@ -92,41 +106,95 @@
             </div>
             <div class="ads">
                 <a href="https://px.a8.net/svt/ejp?a8mat=3BK2FI+BB8IK2+CO4+15T9TD" rel="nofollow">
-                    <img border="0" width="350" height="240" alt="" src="../img/icon_loader_f_ww_01_s1.gif" data-echo="https://www20.a8.net/svt/bgt?aid=200810574684&wid=001&eno=01&mid=s00000001642007023000&mc=1"></a>
-                <img border="0" width="1" height="1" src="../img/icon_loader_f_ww_01_s1.gif" data-echo="https://www11.a8.net/0.gif?a8mat=3BK2FI+BB8IK2+CO4+15T9TD" alt="">
+                    <img border="0" width="350" height="240" alt="" class="lazyestload"
+                        src="../img/icon_loader_f_ww_01_s1.gif"
+                        data-src="https://www20.a8.net/svt/bgt?aid=200810574684&wid=001&eno=01&mid=s00000001642007023000&mc=1"></a>
+                <img border="0" width="1" height="1" class="lazyestload" src="../img/icon_loader_f_ww_01_s1.gif"
+                    data-src="https://www11.a8.net/0.gif?a8mat=3BK2FI+BB8IK2+CO4+15T9TD" alt="">
                 <a href="https://px.a8.net/svt/ejp?a8mat=3BK2FI+82JJZM+50+2HP601" rel="nofollow">
-                    <img border="0" width="336" height="280" alt="" src="../img/icon_loader_f_ww_01_s1.gif" data-echo="https://www29.a8.net/svt/bgt?aid=200810574488&wid=001&eno=01&mid=s00000000018015066000&mc=1"></a>
-                <img border="0" width="1" height="1" src="../img/icon_loader_f_ww_01_s1.gif" data-echo="https://www15.a8.net/0.gif?a8mat=3BK2FI+82JJZM+50+2HP601" alt="">
+                    <img border="0" width="336" height="280" alt="" class="lazyestload"
+                        src="../img/icon_loader_f_ww_01_s1.gif"
+                        data-src="https://www29.a8.net/svt/bgt?aid=200810574488&wid=001&eno=01&mid=s00000000018015066000&mc=1"></a>
+                <img border="0" width="1" height="1" class="lazyestload" src="../img/icon_loader_f_ww_01_s1.gif"
+                    data-src="https://www15.a8.net/0.gif?a8mat=3BK2FI+82JJZM+50+2HP601" alt="">
             </div>
             <section>
                 <h2 id="1">1.ログイン画面が毎回出る状況について</h2>
                 <p>まず，どんな状況かを説明します。ハースストーンをインストール後，Googleアカウントでログインし，この画面が表示されます。</p>
-                <p class="center"><img src="../img/icon_loader_f_ww_01_s1.gif" data-echo="login-problem-img/login-smart-phone.jpg" alt="login-smart-phone"></p>
+                <p class="img">
+                    <picture>
+                        <source type="image/webp" media="(min-width: 601px)"
+                            data-srcset="login-problem-img/login-smart-phone-pc.webp">
+                        <source type="image/webp" media="(min-width: 301px)"
+                            data-srcset="login-problem-img/login-smart-phone-tablet.webp">
+                        <source type="image/webp" media="(max-width: 300px)"
+                            data-srcset="login-problem-img/login-smart-phone-mobile.webp">
+                        <source type="image/jpeg" media="(min-width: 601px)"
+                            data-srcset="login-problem-img/login-smart-phone-pc.jpeg">
+                        <source type="image/jpeg" media="(min-width: 301px)"
+                            data-srcset="login-problem-img/login-smart-phone-tablet.jpeg">
+                        <source type="image/jpeg" media="(max-width: 300px)"
+                            data-srcset="login-problem-img/login-smart-phone-mobile.jpeg">
+                        <img class="lazyestload" src="../img/icon_loader_f_ww_01_s1.gif"
+                            data-src="login-problem-img/login-smart-phone-pc.jpeg" alt="login-smart-phone">
+                    </picture>
+                </p>
                 <p>ここからログインはできます。しかし，ハースストーンのタスクを切り再び開くとまた，この画面が表示されます。</p>
-                <p>アプリごとアンインストールしスマホを再起動後，ハースストーンをインストールを試みます。そして，ログインしてタスクを切ると，やっぱりこのログイン画面が出てきます。この問題を解決したので，その方法を次でお教えします。</p>
+                <p>アプリごとアンインストールしスマホを再起動後，ハースストーンをインストールを試みます。そして，ログインしてタスクを切ると，やっぱりこのログイン画面が出てきます。この問題を解決したので，その方法を次でお教えします。
+                </p>
             </section>
             <div class="ads">
                 <a href="https://px.a8.net/svt/ejp?a8mat=3BK2FI+BB8IK2+CO4+15T9TD" rel="nofollow">
-                    <img border="0" width="350" height="240" alt="" src="../img/icon_loader_f_ww_01_s1.gif" data-echo="https://www20.a8.net/svt/bgt?aid=200810574684&wid=001&eno=01&mid=s00000001642007023000&mc=1"></a>
-                <img border="0" width="1" height="1" src="../img/icon_loader_f_ww_01_s1.gif" data-echo="https://www11.a8.net/0.gif?a8mat=3BK2FI+BB8IK2+CO4+15T9TD" alt="">
+                    <img border="0" width="350" height="240" alt="" class="lazyestload"
+                        src="../img/icon_loader_f_ww_01_s1.gif"
+                        data-src="https://www20.a8.net/svt/bgt?aid=200810574684&wid=001&eno=01&mid=s00000001642007023000&mc=1"></a>
+                <img border="0" width="1" height="1" class="lazyestload" src="../img/icon_loader_f_ww_01_s1.gif"
+                    data-src="https://www11.a8.net/0.gif?a8mat=3BK2FI+BB8IK2+CO4+15T9TD" alt="">
                 <a href="https://px.a8.net/svt/ejp?a8mat=3BK2FI+82JJZM+50+2HP601" rel="nofollow">
-                    <img border="0" width="336" height="280" alt="" src="../img/icon_loader_f_ww_01_s1.gif" data-echo="https://www29.a8.net/svt/bgt?aid=200810574488&wid=001&eno=01&mid=s00000000018015066000&mc=1"></a>
-                <img border="0" width="1" height="1" src="../img/icon_loader_f_ww_01_s1.gif" data-echo="https://www15.a8.net/0.gif?a8mat=3BK2FI+82JJZM+50+2HP601" alt="">
+                    <img border="0" width="336" height="280" alt="" class="lazyestload"
+                        src="../img/icon_loader_f_ww_01_s1.gif"
+                        data-src="https://www29.a8.net/svt/bgt?aid=200810574488&wid=001&eno=01&mid=s00000000018015066000&mc=1"></a>
+                <img border="0" width="1" height="1" class="lazyestload" src="../img/icon_loader_f_ww_01_s1.gif"
+                    data-src="https://www15.a8.net/0.gif?a8mat=3BK2FI+82JJZM+50+2HP601" alt="">
             </div>
             <section>
                 <h2 id="2">解決方法</h2>
-                <p>まず，pc版の<a href="https://playhearthstone.com/ja-jp/">ハースストーン</a>をダウンロードします。そして，Googleアカウントでログインし連携します。</p>
-                <p class="center"><img src="../img/icon_loader_f_ww_01_s1.gif" data-echo="login-problem-img/login-pc.png" alt="login-pc"></p>
+                <p>まず，pc版の<a href="https://playhearthstone.com/ja-jp/">ハースストーン</a>をダウンロードします。そして，Googleアカウントでログインし連携します。
+                </p>
+                <p class="img">
+                    <picture>
+                        <source type="image/webp" media="(min-width: 601px)"
+                            data-srcset="login-problem-img/login-pc-pc.webp">
+                        <source type="image/webp" media="(min-width: 301px)"
+                            data-srcset="login-problem-img/login-pc-tablet.webp">
+                        <source type="image/webp" media="(max-width: 300px)"
+                            data-srcset="login-problem-img/login-pc-mobile.webp">
+                        <source type="image/jpeg" media="(min-width: 601px)"
+                            data-srcset="login-problem-img/login-pc-pc.jpeg">
+                        <source type="image/jpeg" media="(min-width: 301px)"
+                            data-srcset="login-problem-img/login-pc-tablet.jpeg">
+                        <source type="image/jpeg" media="(max-width: 300px)"
+                            data-srcset="login-problem-img/login-pc-mobile.jpeg">
+                        <img class="lazyestload" src="../img/icon_loader_f_ww_01_s1.gif"
+                            data-src="login-problem-img/login-pc-pc.jpeg" alt="login-pc">
+                    </picture>
+                </p>
                 <p>ハースストーンを起動します。使いたいアカウントかどうか確認し，終了します。</p>
                 <p>次に，スマホ版のハースストーンをアンインストールし，スマホを再起動します。そして，ハースストーンをインストールし，Googleアカウントでのログインをし，次の画面もログインすると問題解決です。</p>
             </section>
             <div class="ads">
                 <a href="https://px.a8.net/svt/ejp?a8mat=3BK2FI+BB8IK2+CO4+15T9TD" rel="nofollow">
-                    <img border="0" width="350" height="240" alt="" src="../img/icon_loader_f_ww_01_s1.gif" data-echo="https://www20.a8.net/svt/bgt?aid=200810574684&wid=001&eno=01&mid=s00000001642007023000&mc=1"></a>
-                <img border="0" width="1" height="1" src="../img/icon_loader_f_ww_01_s1.gif" data-echo="https://www11.a8.net/0.gif?a8mat=3BK2FI+BB8IK2+CO4+15T9TD" alt="">
+                    <img border="0" width="350" height="240" alt="" class="lazyestload"
+                        src="../img/icon_loader_f_ww_01_s1.gif"
+                        data-src="https://www20.a8.net/svt/bgt?aid=200810574684&wid=001&eno=01&mid=s00000001642007023000&mc=1"></a>
+                <img border="0" width="1" height="1" class="lazyestload" src="../img/icon_loader_f_ww_01_s1.gif"
+                    data-src="https://www11.a8.net/0.gif?a8mat=3BK2FI+BB8IK2+CO4+15T9TD" alt="">
                 <a href="https://px.a8.net/svt/ejp?a8mat=3BK2FI+82JJZM+50+2HP601" rel="nofollow">
-                    <img border="0" width="336" height="280" alt="" src="../img/icon_loader_f_ww_01_s1.gif" data-echo="https://www29.a8.net/svt/bgt?aid=200810574488&wid=001&eno=01&mid=s00000000018015066000&mc=1"></a>
-                <img border="0" width="1" height="1" src="../img/icon_loader_f_ww_01_s1.gif" data-echo="https://www15.a8.net/0.gif?a8mat=3BK2FI+82JJZM+50+2HP601" alt="">
+                    <img border="0" width="336" height="280" alt="" class="lazyestload"
+                        src="../img/icon_loader_f_ww_01_s1.gif"
+                        data-src="https://www29.a8.net/svt/bgt?aid=200810574488&wid=001&eno=01&mid=s00000000018015066000&mc=1"></a>
+                <img border="0" width="1" height="1" class="lazyestload" src="../img/icon_loader_f_ww_01_s1.gif"
+                    data-src="https://www15.a8.net/0.gif?a8mat=3BK2FI+82JJZM+50+2HP601" alt="">
             </div>
             <section>
                 <h2 id="3">まとめ</h2>
@@ -139,11 +207,17 @@
             </section>
             <div class="ads">
                 <a href="https://px.a8.net/svt/ejp?a8mat=3BK2FI+BB8IK2+CO4+15T9TD" rel="nofollow">
-                    <img border="0" width="350" height="240" alt="" src="../img/icon_loader_f_ww_01_s1.gif" data-echo="https://www20.a8.net/svt/bgt?aid=200810574684&wid=001&eno=01&mid=s00000001642007023000&mc=1"></a>
-                <img border="0" width="1" height="1" src="../img/icon_loader_f_ww_01_s1.gif" data-echo="https://www11.a8.net/0.gif?a8mat=3BK2FI+BB8IK2+CO4+15T9TD" alt="">
+                    <img border="0" width="350" height="240" alt="" class="lazyestload"
+                        src="../img/icon_loader_f_ww_01_s1.gif"
+                        data-src="https://www20.a8.net/svt/bgt?aid=200810574684&wid=001&eno=01&mid=s00000001642007023000&mc=1"></a>
+                <img border="0" width="1" height="1" class="lazyestload" src="../img/icon_loader_f_ww_01_s1.gif"
+                    data-src="https://www11.a8.net/0.gif?a8mat=3BK2FI+BB8IK2+CO4+15T9TD" alt="">
                 <a href="https://px.a8.net/svt/ejp?a8mat=3BK2FI+82JJZM+50+2HP601" rel="nofollow">
-                    <img border="0" width="336" height="280" alt="" src="../img/icon_loader_f_ww_01_s1.gif" data-echo="https://www29.a8.net/svt/bgt?aid=200810574488&wid=001&eno=01&mid=s00000000018015066000&mc=1"></a>
-                <img border="0" width="1" height="1" src="../img/icon_loader_f_ww_01_s1.gif" data-echo="https://www15.a8.net/0.gif?a8mat=3BK2FI+82JJZM+50+2HP601" alt="">
+                    <img border="0" width="336" height="280" alt="" class="lazyestload"
+                        src="../img/icon_loader_f_ww_01_s1.gif"
+                        data-src="https://www29.a8.net/svt/bgt?aid=200810574488&wid=001&eno=01&mid=s00000000018015066000&mc=1"></a>
+                <img border="0" width="1" height="1" class="lazyestload" src="../img/icon_loader_f_ww_01_s1.gif"
+                    data-src="https://www15.a8.net/0.gif?a8mat=3BK2FI+82JJZM+50+2HP601" alt="">
             </div>
         </main>
         <!--メイン(終)-->
@@ -154,33 +228,51 @@
             <div id="ads-side">
                 <div>
                     <a href="https://px.a8.net/svt/ejp?a8mat=3BK2FI+BB8IK2+CO4+15RCDD" rel="nofollow">
-                        <img border="0" width="160" height="600" alt="" src="../img/icon_loader_f_ww_01_s1.gif" data-echo="https://www28.a8.net/svt/bgt?aid=200810574684&wid=001&eno=01&mid=s00000001642007014000&mc=1"></a>
-                    <img border="0" width="1" height="1" src="../img/icon_loader_f_ww_01_s1.gif" data-echo="https://www15.a8.net/0.gif?a8mat=3BK2FI+BB8IK2+CO4+15RCDD" alt="">
+                        <img border="0" width="160" height="600" alt="" class="lazyestload"
+                            src="../img/icon_loader_f_ww_01_s1.gif"
+                            data-src="https://www28.a8.net/svt/bgt?aid=200810574684&wid=001&eno=01&mid=s00000001642007014000&mc=1"></a>
+                    <img border="0" width="1" height="1" class="lazyestload" src="../img/icon_loader_f_ww_01_s1.gif"
+                        data-src="https://www15.a8.net/0.gif?a8mat=3BK2FI+BB8IK2+CO4+15RCDD" alt="">
                 </div>
                 <div>
                     <a href="https://px.a8.net/svt/ejp?a8mat=3BK2FI+82JJZM+50+2HGLCX" rel="nofollow">
-                        <img border="0" width="120" height="600" alt="" src="../img/icon_loader_f_ww_01_s1.gif" data-echo="https://www28.a8.net/svt/bgt?aid=200810574488&wid=001&eno=01&mid=s00000000018015026000&mc=1"></a>
-                    <img border="0" width="1" height="1" src="../img/icon_loader_f_ww_01_s1.gif" data-echo="https://www18.a8.net/0.gif?a8mat=3BK2FI+82JJZM+50+2HGLCX" alt="">
+                        <img border="0" width="120" height="600" alt="" class="lazyestload"
+                            src="../img/icon_loader_f_ww_01_s1.gif"
+                            data-src="https://www28.a8.net/svt/bgt?aid=200810574488&wid=001&eno=01&mid=s00000000018015026000&mc=1"></a>
+                    <img border="0" width="1" height="1" class="lazyestload" src="../img/icon_loader_f_ww_01_s1.gif"
+                        data-src="https://www18.a8.net/0.gif?a8mat=3BK2FI+82JJZM+50+2HGLCX" alt="">
                 </div>
                 <div>
                     <a href="https://px.a8.net/svt/ejp?a8mat=3BK37P+5KN3N6+42SG+6FP1T" rel="nofollow">
-                        <img border="0" width="300" height="250" alt="" src="../img/icon_loader_f_ww_01_s1.gif" data-echo="https://www27.a8.net/svt/bgt?aid=200811589337&wid=001&eno=01&mid=s00000019024001081000&mc=1"></a>
-                    <img border="0" width="1" height="1" src="../img/icon_loader_f_ww_01_s1.gif" data-echo="https://www17.a8.net/0.gif?a8mat=3BK37P+5KN3N6+42SG+6FP1T" alt="">
+                        <img border="0" width="300" height="250" alt="" class="lazyestload"
+                            src="../img/icon_loader_f_ww_01_s1.gif"
+                            data-src="https://www27.a8.net/svt/bgt?aid=200811589337&wid=001&eno=01&mid=s00000019024001081000&mc=1"></a>
+                    <img border="0" width="1" height="1" class="lazyestload" src="../img/icon_loader_f_ww_01_s1.gif"
+                        data-src="https://www17.a8.net/0.gif?a8mat=3BK37P+5KN3N6+42SG+6FP1T" alt="">
                 </div>
                 <div>
                     <a href="https://px.a8.net/svt/ejp?a8mat=3BK37O+BN56NM+348+6FHC1" rel="nofollow">
-                        <img border="0" width="120" height="600" alt="" src="../img/icon_loader_f_ww_01_s1.gif" data-echo="https://www26.a8.net/svt/bgt?aid=200811588704&wid=001&eno=01&mid=s00000000404001080000&mc=1"></a>
-                    <img border="0" width="1" height="1" src="../img/icon_loader_f_ww_01_s1.gif" data-echo="https://www14.a8.net/0.gif?a8mat=3BK37O+BN56NM+348+6FHC1" alt="">
+                        <img border="0" width="120" height="600" alt="" class="lazyestload"
+                            src="../img/icon_loader_f_ww_01_s1.gif"
+                            data-src="https://www26.a8.net/svt/bgt?aid=200811588704&wid=001&eno=01&mid=s00000000404001080000&mc=1"></a>
+                    <img border="0" width="1" height="1" class="lazyestload" src="../img/icon_loader_f_ww_01_s1.gif"
+                        data-src="https://www14.a8.net/0.gif?a8mat=3BK37O+BN56NM+348+6FHC1" alt="">
                 </div>
                 <div>
                     <a href="https://px.a8.net/svt/ejp?a8mat=3BK37O+BKRG8I+CO4+6H729" rel="nofollow">
-                        <img border="0" width="120" height="600" alt="" src="../img/icon_loader_f_ww_01_s1.gif" data-echo="https://www20.a8.net/svt/bgt?aid=200811588700&wid=001&eno=01&mid=s00000001642001088000&mc=1"></a>
-                    <img border="0" width="1" height="1" src="../img/icon_loader_f_ww_01_s1.gif" data-echo="https://www12.a8.net/0.gif?a8mat=3BK37O+BKRG8I+CO4+6H729" alt="">
+                        <img border="0" width="120" height="600" alt="" class="lazyestload"
+                            src="../img/icon_loader_f_ww_01_s1.gif"
+                            data-src="https://www20.a8.net/svt/bgt?aid=200811588700&wid=001&eno=01&mid=s00000001642001088000&mc=1"></a>
+                    <img border="0" width="1" height="1" class="lazyestload" src="../img/icon_loader_f_ww_01_s1.gif"
+                        data-src="https://www12.a8.net/0.gif?a8mat=3BK37O+BKRG8I+CO4+6H729" alt="">
                 </div>
                 <div>
                     <a href="https://px.a8.net/svt/ejp?a8mat=3BK37O+BKRG8I+CO4+6HES1" rel="nofollow">
-                        <img border="0" width="120" height="600" alt="" src="../img/icon_loader_f_ww_01_s1.gif" data-echo="https://www29.a8.net/svt/bgt?aid=200811588700&wid=001&eno=01&mid=s00000001642001089000&mc=1"></a>
-                    <img border="0" width="1" height="1" src="../img/icon_loader_f_ww_01_s1.gif" data-echo="https://www18.a8.net/0.gif?a8mat=3BK37O+BKRG8I+CO4+6HES1" alt="">
+                        <img border="0" width="120" height="600" alt="" class="lazyestload"
+                            src="../img/icon_loader_f_ww_01_s1.gif"
+                            data-src="https://www29.a8.net/svt/bgt?aid=200811588700&wid=001&eno=01&mid=s00000001642001089000&mc=1"></a>
+                    <img border="0" width="1" height="1" class="lazyestload" src="../img/icon_loader_f_ww_01_s1.gif"
+                        data-src="https://www18.a8.net/0.gif?a8mat=3BK37O+BKRG8I+CO4+6HES1" alt="">
                 </div>
             </div>
         </div>
@@ -194,6 +286,7 @@
     <!--フッター(始)-->
     <div id="footer"></div>
     <!--フッター(終)-->
+    <script>!function () { var t, e; t = function () { !function () { for (var t = document.querySelectorAll("img.lazyestload"), e = t.length; e--;) { var r = window.innerHeight, n = t[e].getBoundingClientRect(), a = n.top - r, i = n.bottom; if (a <= 100 && -100 <= i) { if (t[e].getAttribute("data-src") && (t[e].src = t[e].getAttribute("data-src")), t[e].getAttribute("data-srcset") && (t[e].srcset = t[e].getAttribute("data-srcset")), "PICTURE" === t[e].parentElement.tagName) for (var o = t[e].parentElement.querySelectorAll("source"), s = o.length; s--;)o[s].srcset = o[s].getAttribute("data-srcset"); t[e].addEventListener("load", function () { this.classList.remove("lazyestload") }) } } }() }, window.addEventListener("scroll", function () { clearTimeout(e), e = setTimeout(t, 200) }), t() }();</script>
 </body>
 
 </html>
