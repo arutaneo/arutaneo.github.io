@@ -282,6 +282,10 @@
         text-align: center;
     }
     
+    .longurl {
+        word-break: break-all;
+    }
+    
     .red {
         color: red;
     }
@@ -308,7 +312,7 @@
     }
     /*スマホ画面(始)*/
     
-    @media screen and (max-width:600px) {
+    @media screen and (max-width:959px) {
         body {
             width: 100%
         }
