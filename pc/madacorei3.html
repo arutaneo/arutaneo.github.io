@@ -38,8 +38,7 @@
 
     <!--jQuery-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src="../js/common.js" type="text/javascript"></script>
-    <script src="../js/echo.min.js"></script>
+    <script>$(function () { $("#header").load("https://arutaneo.com/include/header.html"); $("#side").load("https://arutaneo.com/include/side.html"); $("#sub").load("https://arutaneo.com/include/sub.html"); $("#footer").load("https://arutaneo.com/include/footer.html"); });</script>
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-165447369-3"></script>
@@ -69,17 +68,26 @@
 
             <!--更新日(始)-->
             <div id="main-text-date">
-                <script src="../js/main-text-date.js" type="text/javascript"></script>
+                <script>var day = new Date(document.lastModified); var y = day.getFullYear(); var m = day.getMonth() + 1; var d = day.getDate(); document.write("Last Update: " + y + "年" + m + "月" + d + "日");</script>
             </div>
             <!--更新日(終)-->
 
-            <picture>
-                <source type="image/webp" src="madacorei3-img/madacorei3.webp">
-                <img src="madacorei3-img/madacorei3.jpeg" alt="madacorei3-img">
-            </picture>
+            <p class="img">
+                <picture>
+                    <source type="image/webp" media="(min-width: 960px)" srcset="madacorei3-img/madacorei3-pc.webp">
+                    <source type="image/webp" media="(min-width: 481px)" srcset="madacorei3-img/madacorei3-tablet.webp">
+                    <source type="image/webp" media="(max-width: 480px)" srcset="madacorei3-img/madacorei3-mobile.webp">
+                    <source type="image/jpeg" media="(min-width: 960px)" srcset="madacorei3-img/madacorei3-pc.jpeg">
+                    <source type="image/jpeg" media="(min-width: 481px)" srcset="madacorei3-img/madacorei3-tablet.jpeg">
+                    <source type="image/jpeg" media="(max-width: 480px)" srcset="madacorei3-img/madacorei3-mobile.jpeg">
+                    <img src="madacorei3-img/madacorei3-pc.jpeg" alt="madacorei3-img">
+                </picture>
+            </p>
 
             <p class="center">
-                <script language="javascript" src="//ad.jp.ap.valuecommerce.com/servlet/jsbanner?sid=3546251&pid=886699730"></script><noscript><a href="//ck.jp.ap.valuecommerce.com/servlet/referral?sid=3546251&pid=886699730" rel="nofollow"><img src="../img/icon_loader_f_ww_01_s1.gif" data-echo=="//ad.jp.ap.valuecommerce.com/servlet/gifbanner?sid=3546251&pid=886699730" border="0"></a></noscript>
+                <script language="javascript" src="//ad.jp.ap.valuecommerce.com/servlet/jsbanner?sid=3546251&pid=886699730"></script><noscript><a href="//ck.jp.ap.valuecommerce.com/servlet/referral?sid=3546251&pid=886699730" rel="nofollow"><img class="lazyestload"
+                    src="../img/icon_loader_f_ww_01_s1.gif"
+                    data-src="//ad.jp.ap.valuecommerce.com/servlet/gifbanner?sid=3546251&pid=886699730" border="0"></a></noscript>
             </p>
             <section>
                 <p>今，このブログをご覧になっている方は</p>
@@ -124,7 +132,9 @@
                 </p>
             </section>
             <p class="center">
-                <script language="javascript" src="//ad.jp.ap.valuecommerce.com/servlet/jsbanner?sid=3546251&pid=886700005"></script><noscript><a href="//ck.jp.ap.valuecommerce.com/servlet/referral?sid=3546251&pid=886700005" rel="nofollow"><img src="../img/icon_loader_f_ww_01_s1.gif" data-echo="//ad.jp.ap.valuecommerce.com/servlet/gifbanner?sid=3546251&pid=886700005" border="0"></a></noscript>
+                <script language="javascript" src="//ad.jp.ap.valuecommerce.com/servlet/jsbanner?sid=3546251&pid=886700005"></script><noscript><a href="//ck.jp.ap.valuecommerce.com/servlet/referral?sid=3546251&pid=886700005" rel="nofollow"><img class="lazyestload"
+                    src="../img/icon_loader_f_ww_01_s1.gif"
+                    data-src="//ad.jp.ap.valuecommerce.com/servlet/gifbanner?sid=3546251&pid=886700005" border="0"></a></noscript>
             </p>
             <section>
                 <h2 id="2">2.CPUだけで快適になるわけではない</h2>
@@ -138,7 +148,9 @@
                 </p>
             </section>
             <p class="center">
-                <script language="javascript" src="//ad.jp.ap.valuecommerce.com/servlet/jsbanner?sid=3546251&pid=886700006"></script><noscript><a href="//ck.jp.ap.valuecommerce.com/servlet/referral?sid=3546251&pid=886700006" rel="nofollow"><img src="../img/icon_loader_f_ww_01_s1.gif" data-echo="//ad.jp.ap.valuecommerce.com/servlet/gifbanner?sid=3546251&pid=886700006" border="0"></a></noscript>
+                <script language="javascript" src="//ad.jp.ap.valuecommerce.com/servlet/jsbanner?sid=3546251&pid=886700006"></script><noscript><a href="//ck.jp.ap.valuecommerce.com/servlet/referral?sid=3546251&pid=886700006" rel="nofollow"><img class="lazyestload"
+                    src="../img/icon_loader_f_ww_01_s1.gif"
+                    data-src="//ad.jp.ap.valuecommerce.com/servlet/gifbanner?sid=3546251&pid=886700006" border="0"></a></noscript>
             </p>
             <section>
                 <h2 id="3">3.最新CPU Celeron，Pentiumの性能</h2>
@@ -154,13 +166,24 @@
                     今では最新で一番安いCeleron G4900(2018年発売，定価$42=4590円)と昔のCorei3-3225（2012年発売，定価$134＝14645円）を比べてみましょう。まず，ベンチマークソフトCinebench R15の結果で比較します。
                 </p>
                 <div class="img">
-                    <p>
-                        <img src="../img/icon_loader_f_ww_01_s1.gif" data-echo="madacorei3-img/celeron g3900.png" alt="celeron g3900"><br>
-                        <img src="../img/icon_loader_f_ww_01_s1.gif" data-echo="madacorei3-img/core i3-3225.png" alt="core i3-3225"><br> （参照：
-                        <a href="https://btopc-minikan.com/cpu-hikaku.html">https://btopc-minikan.com/cpu-hikaku.html</a>)
-                    </p>
-                </div>
                 <p>
+                    <picture>
+                        <source type="image/webp" media="(min-width: 481px)" data-srcset="madacorei3-img/celeron-g3900-pctablet.webp">
+                        <source type="image/webp" media="(max-width: 480px)" data-srcset="madacorei3-img/celeron-g3900-mobile.webp">
+                        <source type="image/jpeg" media="(min-width: 481px)" data-srcset="madacorei3-img/celeron-g3900-pctablet.jpeg">
+                        <source type="image/jpeg" media="(max-width: 480px)" data-srcset="madacorei3-img/celeron-g3900-mobile.jpeg">
+                        <img class="lazyestload" src="../img/icon_loader_f_ww_01_s1.gif" data-src="madacorei3-img/celeron-g3900-pctablet.jpeg" alt="celeron-g3900">
+                    </picture><br>
+                    <picture>
+                        <source type="image/webp" media="(min-width: 481px)" data-srcset="madacorei3-img/core-i3-3225-pctablet.webp">
+                        <source type="image/webp" media="(max-width: 480px)" data-srcset="madacorei3-img/core-i3-3225-mobile.webp">
+                        <source type="image/jpeg" media="(min-width: 481px)" data-srcset="madacorei3-img/core-i3-3225-pctablet.jpeg">
+                        <source type="image/jpeg" media="(max-width: 480px)" data-srcset="madacorei3-img/core-i3-3225-mobile.jpeg">
+                        <img class="lazyestload" src="../img/icon_loader_f_ww_01_s1.gif" data-src="madacorei3-img/core-i3-3225-pctablet.jpeg" alt="core-i3-3225">
+                    </picture><br>
+                    （参照：<a href="https://btopc-minikan.com/cpu-hikaku.html">https://btopc-minikan.com/cpu-hikaku.html</a>)
+                </p>
+                </div>
                     左からメーカー名，CPU名，コア数・スレッド数・動作周波数，内蔵グラフィック，性能値です。イメージとしてコアはCPUの頭脳の数，スレッドはそのコアが受け持てる作業数，動作周波数はCPUの頭脳の速さと捉えてください。<span class="blue">青色がすべてのコアを合わせたの性能値（マルチコア）</span>で<span class="orange">オレンジ色が1つ当たりコアの性能値（シングルコア）</span>で高いほど高性能です。これを見て分かる通りマルチコアの性能はCeleronが2コア2スレッドに対しCore
                     i3の方は2コア4スレッドなので負けてしまいましたが，実際に使用してる時には差は全く感じられないほどの差です。そしてなんと！
                     <br>
@@ -170,18 +193,38 @@
                     <em class="marker-under-red">シングルコアの性能の方が実用面では大切</em>なのです。
                 </p>
                 <p class="center">
-                    <script language="javascript" src="//ad.jp.ap.valuecommerce.com/servlet/jsbanner?sid=3546251&pid=886700014"></script><noscript><a href="//ck.jp.ap.valuecommerce.com/servlet/referral?sid=3546251&pid=886700014" rel="nofollow"><img src="../img/icon_loader_f_ww_01_s1.gif" data-echo="//ad.jp.ap.valuecommerce.com/servlet/gifbanner?sid=3546251&pid=886700014" border="0"></a></noscript>
+                    <script language="javascript" src="//ad.jp.ap.valuecommerce.com/servlet/jsbanner?sid=3546251&pid=886700014"></script><noscript><a href="//ck.jp.ap.valuecommerce.com/servlet/referral?sid=3546251&pid=886700014" rel="nofollow"><img class="lazyestload"
+                        src="../img/icon_loader_f_ww_01_s1.gif"
+                        data-src="//ad.jp.ap.valuecommerce.com/servlet/gifbanner?sid=3546251&pid=886700014" border="0"></a></noscript>
                 </p>
                 <p>
                     次は最新CPUのPentium Gold G5600(2018年発売，定価$86=9399円)と少し古いCore i7-6700（2015年発売，定価$303=33116円）とCore i3-6320（2015年発売，定価$149=16284円）を比べてみましょう。同様にベンチマークソフトCinebench R15の結果で比較します。
                 </p>
                 <div class="img">
-                    <p>
-                        <img src="../img/icon_loader_f_ww_01_s1.gif" data-echo="madacorei3-img/pentium gold g5600.png" alt="pentium gold g5600"><br>
-                        <img src="../img/icon_loader_f_ww_01_s1.gif" data-echo="madacorei3-img/core i7-6700.png" alt="core i7-6700"><br>
-                        <img src="../img/icon_loader_f_ww_01_s1.gif" data-echo="madacorei3-img/core i3-6320.png" alt="core i3-6320"><br> （参照：
-                        <a href="https://btopc-minikan.com/cpu-hikaku.html">https://btopc-minikan.com/cpu-hikaku.html</a>)
-                    </p>
+                <p>
+                    <picture>
+                        <source type="image/webp" media="(min-width: 481px)" data-srcset="madacorei3-img/pentium-gold-g5600-pctablet.webp">
+                        <source type="image/webp" media="(max-width: 480px)" data-srcset="madacorei3-img/pentium-gold-g5600-mobile.webp">
+                        <source type="image/jpeg" media="(min-width: 481px)" data-srcset="madacorei3-img/pentium-gold-g5600-pctablet.jpeg">
+                        <source type="image/jpeg" media="(max-width: 480px)" data-srcset="madacorei3-img/pentium-gold-g5600-mobile.jpeg">
+                        <img class="lazyestload" src="../img/icon_loader_f_ww_01_s1.gif" data-src="madacorei3-img/pentium-gold-g5600-pctablet.jpeg" alt="pentium-gold-g5600">
+                    </picture><br>
+                    <picture>
+                        <source type="image/webp" media="(min-width: 481px)" data-srcset="madacorei3-img/core-i7-6700-pctablet.webp">
+                        <source type="image/webp" media="(max-width: 480px)" data-srcset="madacorei3-img/core-i7-6700-mobile.webp">
+                        <source type="image/jpeg" media="(min-width: 481px)" data-srcset="madacorei3-img/core-i7-6700-pctablet.jpeg">
+                        <source type="image/jpeg" media="(max-width: 480px)" data-srcset="madacorei3-img/core-i7-6700-mobile.jpeg">
+                        <img class="lazyestload" src="../img/icon_loader_f_ww_01_s1.gif" data-src="madacorei3-img/core-i7-6700-pctablet.jpeg" alt="core-i7-6700">
+                    </picture><br>
+                    <picture>
+                        <source type="image/webp" media="(min-width: 481px)" data-srcset="madacorei3-img/core-i3-6320-pctablet.webp">
+                        <source type="image/webp" media="(max-width: 480px)" data-srcset="madacorei3-img/core-i3-6320-mobile.webp">
+                        <source type="image/jpeg" media="(min-width: 481px)" data-srcset="madacorei3-img/core-i3-6320-pctablet.jpeg">
+                        <source type="image/jpeg" media="(max-width: 480px)" data-srcset="madacorei3-img/core-i3-6320-mobile.jpeg">
+                        <img class="lazyestload" src="../img/icon_loader_f_ww_01_s1.gif" data-src="madacorei3-img/core-i3-6320-pctablet.jpeg" alt="core-i3-6320">
+                    </picture><br>
+                    （参照：<a href="https://btopc-minikan.com/cpu-hikaku.html">https://btopc-minikan.com/cpu-hikaku.html</a>)
+                </p>
                 </div>
                 <p>
                     これを見て分かる通りマルチコアの性能はPentiumが2コア4スレッドに対しCore i7の方は4コア8スレッドなので負けてしまいました。ここまで差があると使用してる時にかなり同時並列処理能力が変わってきます。しかしなんと！
@@ -194,10 +237,16 @@
                     以上の話をまとめる前にもっと後押しすると，Pentium，CeleronなどのCPU内蔵グラフィックを比較してみましょう。ちなみにグラフィック性能が高いほどゲームが快適に動作したり動画の画質を高くしても快適に動作します。
                 </p>
                 <div class="img">
-                    <p>
-                        <img src="../img/icon_loader_f_ww_01_s1.gif" data-echo="madacorei3-img/intel-gpu.png" alt="intel-gpu"><br> (参照：
-                        <a href="https://chimolog.co/bto-intel-gpu/">https://chimolog.co/bto-intel-gpu/</a>)
-                    </p>
+                <p>
+                    <picture>
+                        <source type="image/webp" media="(min-width: 481px)" data-srcset="madacorei3-img/intel-gpu-pctablet.webp">
+                        <source type="image/webp" media="(max-width: 480px)" data-srcset="madacorei3-img/intel-gpu-mobile.webp">
+                        <source type="image/jpeg" media="(min-width: 481px)" data-srcset="madacorei3-img/intel-gpu-pctablet.jpeg">
+                        <source type="image/jpeg" media="(max-width: 480px)" data-srcset="madacorei3-img/intel-gpu-mobile.jpeg">
+                        <img class="lazyestload" src="../img/icon_loader_f_ww_01_s1.gif" data-src="madacorei3-img/intel-gpu-pctablet.jpeg" alt="intel-gpu">
+                    </picture><br>
+                    (参照：<a href="https://chimolog.co/bto-intel-gpu/">https://chimolog.co/bto-intel-gpu/</a>)
+                </p>
                 </div>
                 <p>
                     こちらはパソコン業界では有名なちもろぐさんという方が実際にパソコンを使いいろんなゲームのfpsを計測した結果です。これを見ると分かるようにCPUとしての性能はCorei3などと同等でも，内蔵グラフィック性能は最新のCPUの方が明らかに高いのです。<br>
@@ -212,7 +261,9 @@
                 </p>
             </section>
             <p class="center">
-                <script language="javascript" src="//ad.jp.ap.valuecommerce.com/servlet/jsbanner?sid=3546251&pid=886700016"></script><noscript><a href="//ck.jp.ap.valuecommerce.com/servlet/referral?sid=3546251&pid=886700016" rel="nofollow"><img src="../img/icon_loader_f_ww_01_s1.gif" data-echo="//ad.jp.ap.valuecommerce.com/servlet/gifbanner?sid=3546251&pid=886700016" border="0"></a></noscript>
+                <script language="javascript" src="//ad.jp.ap.valuecommerce.com/servlet/jsbanner?sid=3546251&pid=886700016"></script><noscript><a href="//ck.jp.ap.valuecommerce.com/servlet/referral?sid=3546251&pid=886700016" rel="nofollow"><img class="lazyestload"
+                        src="../img/icon_loader_f_ww_01_s1.gif"
+                        data-src="//ad.jp.ap.valuecommerce.com/servlet/gifbanner?sid=3546251&pid=886700016" border="0"></a></noscript>
             </p>
             <section>
                 <h2 id="4">4.まとめ</h2>
@@ -231,7 +282,9 @@
                 </p>
             </section>
             <p class="center">
-                <script language="javascript" src="//ad.jp.ap.valuecommerce.com/servlet/jsbanner?sid=3546251&pid=886700018"></script><noscript><a href="//ck.jp.ap.valuecommerce.com/servlet/referral?sid=3546251&pid=886700018" rel="nofollow"><img src="../img/icon_loader_f_ww_01_s1.gif" data-echo="//ad.jp.ap.valuecommerce.com/servlet/gifbanner?sid=3546251&pid=886700018" border="0"></a></noscript>
+                <script language="javascript" src="//ad.jp.ap.valuecommerce.com/servlet/jsbanner?sid=3546251&pid=886700018"></script><noscript><a href="//ck.jp.ap.valuecommerce.com/servlet/referral?sid=3546251&pid=886700018" rel="nofollow"><img class="lazyestload"
+                        src="../img/icon_loader_f_ww_01_s1.gif"
+                        data-src="//ad.jp.ap.valuecommerce.com/servlet/gifbanner?sid=3546251&pid=886700018" border="0"></a></noscript>
             </p>
         </main>
         <!--メイン(終)-->
@@ -241,79 +294,137 @@
             <div id="side"></div>
             <div id="ads-side">
                 <div>
-                    <script language="javascript" src="//ad.jp.ap.valuecommerce.com/servlet/jsbanner?sid=3546251&pid=886700004"></script><noscript><a href="//ck.jp.ap.valuecommerce.com/servlet/referral?sid=3546251&pid=886700004" rel="nofollow"><img src="../img/icon_loader_f_ww_01_s1.gif" data-echo="//ad.jp.ap.valuecommerce.com/servlet/gifbanner?sid=3546251&pid=886700004" border="0"></a></noscript>
+                    <script language="javascript" src="//ad.jp.ap.valuecommerce.com/servlet/jsbanner?sid=3546251&pid=886700004"></script><noscript><a href="//ck.jp.ap.valuecommerce.com/servlet/referral?sid=3546251&pid=886700004" rel="nofollow"><img class="lazyestload"
+                        src="../img/icon_loader_f_ww_01_s1.gif"
+                        data-src="//ad.jp.ap.valuecommerce.com/servlet/gifbanner?sid=3546251&pid=886700004" border="0"></a></noscript>
                 </div>
                 <div>
-                    <script language="javascript" src="//ad.jp.ap.valuecommerce.com/servlet/jsbanner?sid=3546251&pid=886700010"></script><noscript><a href="//ck.jp.ap.valuecommerce.com/servlet/referral?sid=3546251&pid=886700010" rel="nofollow"><img src="../img/icon_loader_f_ww_01_s1.gif" data-echo="//ad.jp.ap.valuecommerce.com/servlet/gifbanner?sid=3546251&pid=886700010" border="0"></a></noscript>
+                    <script language="javascript" src="//ad.jp.ap.valuecommerce.com/servlet/jsbanner?sid=3546251&pid=886700010"></script><noscript><a href="//ck.jp.ap.valuecommerce.com/servlet/referral?sid=3546251&pid=886700010" rel="nofollow"><img class="lazyestload"
+                        src="../img/icon_loader_f_ww_01_s1.gif"
+                        data-src="//ad.jp.ap.valuecommerce.com/servlet/gifbanner?sid=3546251&pid=886700010" border="0"></a></noscript>
                 </div>
                 <div>
-                    <script language="javascript" src="//ad.jp.ap.valuecommerce.com/servlet/jsbanner?sid=3546251&pid=886700011"></script><noscript><a href="//ck.jp.ap.valuecommerce.com/servlet/referral?sid=3546251&pid=886700011" rel="nofollow"><img src="../img/icon_loader_f_ww_01_s1.gif" data-echo="//ad.jp.ap.valuecommerce.com/servlet/gifbanner?sid=3546251&pid=886700011" border="0"></a></noscript>
+                    <script language="javascript" src="//ad.jp.ap.valuecommerce.com/servlet/jsbanner?sid=3546251&pid=886700011"></script><noscript><a href="//ck.jp.ap.valuecommerce.com/servlet/referral?sid=3546251&pid=886700011" rel="nofollow"><img class="lazyestload"
+                        src="../img/icon_loader_f_ww_01_s1.gif"
+                        data-src="//ad.jp.ap.valuecommerce.com/servlet/gifbanner?sid=3546251&pid=886700011" border="0"></a></noscript>
                 </div>
                 <div>
-                    <script language="javascript" src="//ad.jp.ap.valuecommerce.com/servlet/jsbanner?sid=3546251&pid=886700019"></script><noscript><a href="//ck.jp.ap.valuecommerce.com/servlet/referral?sid=3546251&pid=886700019" rel="nofollow"><img src="../img/icon_loader_f_ww_01_s1.gif" data-echo="//ad.jp.ap.valuecommerce.com/servlet/gifbanner?sid=3546251&pid=886700019" border="0"></a></noscript>
+                    <script language="javascript" src="//ad.jp.ap.valuecommerce.com/servlet/jsbanner?sid=3546251&pid=886700019"></script><noscript><a href="//ck.jp.ap.valuecommerce.com/servlet/referral?sid=3546251&pid=886700019" rel="nofollow"><img class="lazyestload"
+                        src="../img/icon_loader_f_ww_01_s1.gif"
+                        data-src="//ad.jp.ap.valuecommerce.com/servlet/gifbanner?sid=3546251&pid=886700019" border="0"></a></noscript>
                 </div>
                 <div>
-                    <script language="javascript" src="//ad.jp.ap.valuecommerce.com/servlet/jsbanner?sid=3546251&pid=886699987"></script><noscript><a href="//ck.jp.ap.valuecommerce.com/servlet/referral?sid=3546251&pid=886699987" rel="nofollow"><img src="../img/icon_loader_f_ww_01_s1.gif" data-echo="//ad.jp.ap.valuecommerce.com/servlet/gifbanner?sid=3546251&pid=886699987" border="0"></a></noscript>
+                    <script language="javascript" src="//ad.jp.ap.valuecommerce.com/servlet/jsbanner?sid=3546251&pid=886699987"></script><noscript><a href="//ck.jp.ap.valuecommerce.com/servlet/referral?sid=3546251&pid=886699987" rel="nofollow"><img class="lazyestload"
+                        src="../img/icon_loader_f_ww_01_s1.gif"
+                        data-src="//ad.jp.ap.valuecommerce.com/servlet/gifbanner?sid=3546251&pid=886699987" border="0"></a></noscript>
                 </div>
                 <div>
                     <a href="https://px.a8.net/svt/ejp?a8mat=3BK2FI+BB8IK2+CO4+15T9TD" rel="nofollow">
-                        <img border="0" width="350" height="240" alt="" src="../img/icon_loader_f_ww_01_s1.gif" data-echo="https://www29.a8.net/svt/bgt?aid=200810574684&wid=001&eno=01&mid=s00000001642007023000&mc=1"></a>
-                    <img border="0" width="1" height="1" src="../img/icon_loader_f_ww_01_s1.gif" data-echo="https://www17.a8.net/0.gif?a8mat=3BK2FI+BB8IK2+CO4+15T9TD" alt="">
+                        <img border="0" width="350" height="240" alt="" class="lazyestload"
+                        src="../img/icon_loader_f_ww_01_s1.gif"
+                        data-src="https://www29.a8.net/svt/bgt?aid=200810574684&wid=001&eno=01&mid=s00000001642007023000&mc=1"></a>
+                    <img border="0" width="1" height="1" class="lazyestload"
+                        src="../img/icon_loader_f_ww_01_s1.gif"
+                        data-src="https://www17.a8.net/0.gif?a8mat=3BK2FI+BB8IK2+CO4+15T9TD" alt="">
                 </div>
                 <div>
                     <a href="https://px.a8.net/svt/ejp?a8mat=3BK2FI+82JJZM+50+2HP601" rel="nofollow">
-                        <img border="0" width="336" height="280" alt="" src="../img/icon_loader_f_ww_01_s1.gif" data-echo="https://www29.a8.net/svt/bgt?aid=200810574488&wid=001&eno=01&mid=s00000000018015066000&mc=1"></a>
-                    <img border="0" width="1" height="1" src="../img/icon_loader_f_ww_01_s1.gif" data-echo="https://www18.a8.net/0.gif?a8mat=3BK2FI+82JJZM+50+2HP601" alt="">
+                        <img border="0" width="336" height="280" alt="" class="lazyestload"
+                        src="../img/icon_loader_f_ww_01_s1.gif"
+                        data-src="https://www29.a8.net/svt/bgt?aid=200810574488&wid=001&eno=01&mid=s00000000018015066000&mc=1"></a>
+                    <img border="0" width="1" height="1" class="lazyestload"
+                        src="../img/icon_loader_f_ww_01_s1.gif"
+                        data-src="https://www18.a8.net/0.gif?a8mat=3BK2FI+82JJZM+50+2HP601" alt="">
                 </div>
                 <div>
                     <a href="https://px.a8.net/svt/ejp?a8mat=3BK2FI+CAYIUQ+399O+67Z9T" rel="nofollow">
-                        <img border="0" width="336" height="280" alt="" src="../img/icon_loader_f_ww_01_s1.gif" data-echo="https://www25.a8.net/svt/bgt?aid=200810574744&wid=001&eno=01&mid=s00000015198001045000&mc=1"></a>
-                    <img border="0" width="1" height="1" src="../img/icon_loader_f_ww_01_s1.gif" data-echo="https://www16.a8.net/0.gif?a8mat=3BK2FI+CAYIUQ+399O+67Z9T" alt="">
+                        <img border="0" width="336" height="280" alt="" class="lazyestload"
+                        src="../img/icon_loader_f_ww_01_s1.gif"
+                        data-src="https://www25.a8.net/svt/bgt?aid=200810574744&wid=001&eno=01&mid=s00000015198001045000&mc=1"></a>
+                    <img border="0" width="1" height="1" class="lazyestload"
+                        src="../img/icon_loader_f_ww_01_s1.gif"
+                        data-src="https://www16.a8.net/0.gif?a8mat=3BK2FI+CAYIUQ+399O+67Z9T" alt="">
                 </div>
                 <div>
                     <a href="https://px.a8.net/svt/ejp?a8mat=3BK2FI+834ZLE+1WP2+6IP2P" rel="nofollow">
-                        <img border="0" width="300" height="250" alt="" src="../img/icon_loader_f_ww_01_s1.gif" data-echo="https://www21.a8.net/svt/bgt?aid=200810574489&wid=001&eno=01&mid=s00000008903001095000&mc=1"></a>
-                    <img border="0" width="1" height="1" src="../img/icon_loader_f_ww_01_s1.gif" data-echo="https://www12.a8.net/0.gif?a8mat=3BK2FI+834ZLE+1WP2+6IP2P" alt="">
+                        <img border="0" width="300" height="250" alt="" class="lazyestload"
+                        src="../img/icon_loader_f_ww_01_s1.gif"
+                        data-src="https://www21.a8.net/svt/bgt?aid=200810574489&wid=001&eno=01&mid=s00000008903001095000&mc=1"></a>
+                    <img border="0" width="1" height="1" class="lazyestload"
+                        src="../img/icon_loader_f_ww_01_s1.gif"
+                        data-src="https://www12.a8.net/0.gif?a8mat=3BK2FI+834ZLE+1WP2+6IP2P" alt="">
                 </div>
                 <div>
                     <a href="https://px.a8.net/svt/ejp?a8mat=3BK2FI+81Y4DU+3JTE+626XT" rel="nofollow">
-                        <img border="0" width="300" height="250" alt="" src="../img/icon_loader_f_ww_01_s1.gif" data-echo="https://www28.a8.net/svt/bgt?aid=200810574487&wid=001&eno=01&mid=s00000016565001018000&mc=1"></a>
-                    <img border="0" width="1" height="1" src="../img/icon_loader_f_ww_01_s1.gif" data-echo="https://www16.a8.net/0.gif?a8mat=3BK2FI+81Y4DU+3JTE+626XT" alt="">
+                        <img border="0" width="300" height="250" alt="" class="lazyestload"
+                        src="../img/icon_loader_f_ww_01_s1.gif"
+                        data-src="https://www28.a8.net/svt/bgt?aid=200810574487&wid=001&eno=01&mid=s00000016565001018000&mc=1"></a>
+                    <img border="0" width="1" height="1" class="lazyestload"
+                        src="../img/icon_loader_f_ww_01_s1.gif"
+                        data-src="https://www16.a8.net/0.gif?a8mat=3BK2FI+81Y4DU+3JTE+626XT" alt="">
                 </div>
                 <div>
                     <a href="https://px.a8.net/svt/ejp?a8mat=3BK2FI+BB8IK2+CO4+15RCDD" rel="nofollow">
-                        <img border="0" width="160" height="600" alt="" src="../img/icon_loader_f_ww_01_s1.gif" data-echo="https://www26.a8.net/svt/bgt?aid=200810574684&wid=001&eno=01&mid=s00000001642007014000&mc=1"></a>
-                    <img border="0" width="1" height="1" src="../img/icon_loader_f_ww_01_s1.gif" data-echo="https://www16.a8.net/0.gif?a8mat=3BK2FI+BB8IK2+CO4+15RCDD" alt="">
+                        <img border="0" width="160" height="600" alt="" class="lazyestload"
+                        src="../img/icon_loader_f_ww_01_s1.gif"
+                        data-src="https://www26.a8.net/svt/bgt?aid=200810574684&wid=001&eno=01&mid=s00000001642007014000&mc=1"></a>
+                    <img border="0" width="1" height="1" class="lazyestload"
+                        src="../img/icon_loader_f_ww_01_s1.gif"
+                        data-src="https://www16.a8.net/0.gif?a8mat=3BK2FI+BB8IK2+CO4+15RCDD" alt="">
                 </div>
                 <div>
                     <a href="https://px.a8.net/svt/ejp?a8mat=3BK2FI+CAYIUQ+399O+65U41" rel="nofollow">
-                        <img border="0" width="336" height="280" alt="" src="../img/icon_loader_f_ww_01_s1.gif" data-echo="https://www24.a8.net/svt/bgt?aid=200810574744&wid=001&eno=01&mid=s00000015198001035000&mc=1"></a>
-                    <img border="0" width="1" height="1" src="../img/icon_loader_f_ww_01_s1.gif" data-echo="https://www15.a8.net/0.gif?a8mat=3BK2FI+CAYIUQ+399O+65U41" alt="">
+                        <img border="0" width="336" height="280" alt="" class="lazyestload"
+                        src="../img/icon_loader_f_ww_01_s1.gif"
+                        data-src="https://www24.a8.net/svt/bgt?aid=200810574744&wid=001&eno=01&mid=s00000015198001035000&mc=1"></a>
+                    <img border="0" width="1" height="1" class="lazyestload"
+                        src="../img/icon_loader_f_ww_01_s1.gif"
+                        data-src="https://www15.a8.net/0.gif?a8mat=3BK2FI+CAYIUQ+399O+65U41" alt="">
                 </div>
                 <div>
                     <a href="https://px.a8.net/svt/ejp?a8mat=3BK37O+BKRG8I+CO4+68MF5" rel="nofollow">
-                        <img border="0" width="160" height="600" alt="" src="../img/icon_loader_f_ww_01_s1.gif" data-echo="https://www29.a8.net/svt/bgt?aid=200811588700&wid=001&eno=01&mid=s00000001642001048000&mc=1"></a>
-                    <img border="0" width="1" height="1" src="../img/icon_loader_f_ww_01_s1.gif" data-echo="https://www10.a8.net/0.gif?a8mat=3BK37O+BKRG8I+CO4+68MF5" alt="">
+                        <img border="0" width="160" height="600" alt="" class="lazyestload"
+                        src="../img/icon_loader_f_ww_01_s1.gif"
+                        data-src="https://www29.a8.net/svt/bgt?aid=200811588700&wid=001&eno=01&mid=s00000001642001048000&mc=1"></a>
+                    <img border="0" width="1" height="1" class="lazyestload"
+                        src="../img/icon_loader_f_ww_01_s1.gif"
+                        data-src="https://www10.a8.net/0.gif?a8mat=3BK37O+BKRG8I+CO4+68MF5" alt="">
                 </div>
                 <div>
                     <a href="https://px.a8.net/svt/ejp?a8mat=3BK37P+5KN3N6+42SG+6FP1T" rel="nofollow">
-                        <img border="0" width="300" height="250" alt="" src="../img/icon_loader_f_ww_01_s1.gif" data-echo="https://www22.a8.net/svt/bgt?aid=200811589337&wid=001&eno=01&mid=s00000019024001081000&mc=1"></a>
-                    <img border="0" width="1" height="1" src="../img/icon_loader_f_ww_01_s1.gif" data-echo="https://www19.a8.net/0.gif?a8mat=3BK37P+5KN3N6+42SG+6FP1T" alt="">
+                        <img border="0" width="300" height="250" alt="" class="lazyestload"
+                        src="../img/icon_loader_f_ww_01_s1.gif"
+                        data-src="https://www22.a8.net/svt/bgt?aid=200811589337&wid=001&eno=01&mid=s00000019024001081000&mc=1"></a>
+                    <img border="0" width="1" height="1" class="lazyestload"
+                        src="../img/icon_loader_f_ww_01_s1.gif"
+                        data-src="https://www19.a8.net/0.gif?a8mat=3BK37P+5KN3N6+42SG+6FP1T" alt="">
                 </div>
                 <div>
                     <a href="https://px.a8.net/svt/ejp?a8mat=3BK37P+5KN3N6+42SG+601S1" rel="nofollow">
-                        <img border="0" width="300" height="250" alt="" src="../img/icon_loader_f_ww_01_s1.gif" data-echo="https://www23.a8.net/svt/bgt?aid=200811589337&wid=001&eno=01&mid=s00000019024001008000&mc=1"></a>
-                    <img border="0" width="1" height="1" src="../img/icon_loader_f_ww_01_s1.gif" data-echo="https://www14.a8.net/0.gif?a8mat=3BK37P+5KN3N6+42SG+601S1" alt="">
+                        <img border="0" width="300" height="250" alt="" class="lazyestload"
+                        src="../img/icon_loader_f_ww_01_s1.gif"
+                        data-src="https://www23.a8.net/svt/bgt?aid=200811589337&wid=001&eno=01&mid=s00000019024001008000&mc=1"></a>
+                    <img border="0" width="1" height="1" class="lazyestload"
+                        src="../img/icon_loader_f_ww_01_s1.gif"
+                        data-src="https://www14.a8.net/0.gif?a8mat=3BK37P+5KN3N6+42SG+601S1" alt="">
                 </div>
                 <div>
                     <a href="https://px.a8.net/svt/ejp?a8mat=3BK37O+BN56NM+348+699KH" rel="nofollow">
-                        <img border="0" width="160" height="600" alt="" src="../img/icon_loader_f_ww_01_s1.gif" data-echo="https://www21.a8.net/svt/bgt?aid=200811588704&wid=001&eno=01&mid=s00000000404001051000&mc=1"></a>
-                    <img border="0" width="1" height="1" src="../img/icon_loader_f_ww_01_s1.gif" data-echo="https://www11.a8.net/0.gif?a8mat=3BK37O+BN56NM+348+699KH" alt="">
+                        <img border="0" width="160" height="600" alt="" class="lazyestload"
+                        src="../img/icon_loader_f_ww_01_s1.gif"
+                        data-src="https://www21.a8.net/svt/bgt?aid=200811588704&wid=001&eno=01&mid=s00000000404001051000&mc=1"></a>
+                    <img border="0" width="1" height="1" class="lazyestload"
+                        src="../img/icon_loader_f_ww_01_s1.gif"
+                        data-src="https://www11.a8.net/0.gif?a8mat=3BK37O+BN56NM+348+699KH" alt="">
                 </div>
                 <div>
                     <a href="https://px.a8.net/svt/ejp?a8mat=3BK2FI+80R96A+0K+11KG9T" rel="nofollow">
-                        <img border="0" width="160" height="600" alt="" src="../img/icon_loader_f_ww_01_s1.gif" data-echo="https://www28.a8.net/svt/bgt?aid=200810574485&wid=001&eno=01&mid=s00000000002006310000&mc=1"></a>
-                    <img border="0" width="1" height="1" src="../img/icon_loader_f_ww_01_s1.gif" data-echo="https://www17.a8.net/0.gif?a8mat=3BK2FI+80R96A+0K+11KG9T" alt="">
+                        <img border="0" width="160" height="600" alt="" class="lazyestload"
+                        src="../img/icon_loader_f_ww_01_s1.gif"
+                        data-src="https://www28.a8.net/svt/bgt?aid=200810574485&wid=001&eno=01&mid=s00000000002006310000&mc=1"></a>
+                    <img border="0" width="1" height="1" class="lazyestload"
+                        src="../img/icon_loader_f_ww_01_s1.gif"
+                        data-src="https://www17.a8.net/0.gif?a8mat=3BK2FI+80R96A+0K+11KG9T" alt="">
                 </div>
             </div>
         </div>
