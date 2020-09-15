@@ -40,8 +40,7 @@
 
     <!--jQuery-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src="../js/common.js" type="text/javascript"></script>
-    <script src="../js/echo.min.js"></script>
+    <script>$(function () { $("#header").load("https://arutaneo.com/include/header.html"); $("#side").load("https://arutaneo.com/include/side.html"); $("#sub").load("https://arutaneo.com/include/sub.html"); $("#footer").load("https://arutaneo.com/include/footer.html"); });</script>
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-165447369-3"></script>
@@ -71,7 +70,7 @@
 
             <!--更新日(始)-->
             <div id="main-text-date">
-                <script src="../js/main-text-date.js" type="text/javascript"></script>
+                <script>var day = new Date(document.lastModified); var y = day.getFullYear(); var m = day.getMonth() + 1; var d = day.getDate(); document.write("Last Update: " + y + "年" + m + "月" + d + "日");</script>
             </div>
             <!--更新日(終)-->
 
@@ -104,19 +103,43 @@
                 <p>
                     次に，ドメインを設定します。『設定』の下の方にある『GitHubページ』にある『カスタムドメイン』に<a href="the-lowest-website-1.html#2">2.ドメイン取得</a>で作ったドメインを入力し保存を押します。
                 </p>
-                <p class="img"><img src="../img/icon_loader_f_ww_01_s1.gif" data-echo="the-lowest-website-img/xdomain10.png" alt="xdomain10"></p>
+                <p class="img">
+                    <picture>
+                        <source type="image/webp" media="(min-width: 481px)" data-srcset="the-lowest-website-img/xdomain10-pctablet.webp">
+                        <source type="image/webp" media="(max-width: 480px)" data-srcset="the-lowest-website-img/xdomain10-mobile.webp">
+                        <source type="image/jpeg" media="(min-width: 481px)" data-srcset="the-lowest-website-img/xdomain10-pctablet.jpeg">
+                        <source type="image/jpeg" media="(max-width: 480px)" data-srcset="the-lowest-website-img/xdomain10-mobile.jpeg">
+                        <img class="lazyestload" src="../img/icon_loader_f_ww_01_s1.gif" data-src="the-lowest-website-img/xdomain10-pctablet.jpeg" alt="xdomain10">
+                    </picture>
+                </p>
                 <p>
                     その後，最大24時間待つと，『HTTPSを適用する』にチェックを入れられるようになりますので，チェックを入れたら完了です。
                 </p>
-                <p class="img"><img src="../img/icon_loader_f_ww_01_s1.gif" data-echo="the-lowest-website-img/xdomain11.png" alt="xdomain11"></p>
+                <p class="img">
+                    <picture>
+                        <source type="image/webp" media="(min-width: 481px)" data-srcset="the-lowest-website-img/xdomain11-pctablet.webp">
+                        <source type="image/webp" media="(max-width: 480px)" data-srcset="the-lowest-website-img/xdomain11-mobile.webp">
+                        <source type="image/jpeg" media="(min-width: 481px)" data-srcset="the-lowest-website-img/xdomain11-pctablet.jpeg">
+                        <source type="image/jpeg" media="(max-width: 480px)" data-srcset="the-lowest-website-img/xdomain11-mobile.jpeg">
+                        <img class="lazyestload" src="../img/icon_loader_f_ww_01_s1.gif" data-src="the-lowest-website-img/xdomain11-pctablet.jpeg" alt="xdomain11">
+                    </picture>
+                </p>
             </section>
             <div class="ads">
                 <a href="https://px.a8.net/svt/ejp?a8mat=3BK2FI+BB8IK2+CO4+15T9TD" rel="nofollow">
-                    <img border="0" width="350" height="240" alt="" src="../img/icon_loader_f_ww_01_s1.gif" data-echo="https://www20.a8.net/svt/bgt?aid=200810574684&wid=001&eno=01&mid=s00000001642007023000&mc=1"></a>
-                <img border="0" width="1" height="1" src="../img/icon_loader_f_ww_01_s1.gif" data-echo="https://www11.a8.net/0.gif?a8mat=3BK2FI+BB8IK2+CO4+15T9TD" alt="">
+                    <img border="0" width="350" height="240" alt="" class="lazyestload"
+                        src="../img/icon_loader_f_ww_01_s1.gif"
+                        data-src="https://www20.a8.net/svt/bgt?aid=200810574684&wid=001&eno=01&mid=s00000001642007023000&mc=1"></a>
+                <img border="0" width="1" height="1" class="lazyestload"
+                        src="../img/icon_loader_f_ww_01_s1.gif"
+                        data-src="https://www11.a8.net/0.gif?a8mat=3BK2FI+BB8IK2+CO4+15T9TD" alt="">
                 <a href="https://px.a8.net/svt/ejp?a8mat=3BK2FI+82JJZM+50+2HP601" rel="nofollow">
-                    <img border="0" width="336" height="280" alt="" src="../img/icon_loader_f_ww_01_s1.gif" data-echo="https://www29.a8.net/svt/bgt?aid=200810574488&wid=001&eno=01&mid=s00000000018015066000&mc=1"></a>
-                <img border="0" width="1" height="1" src="../img/icon_loader_f_ww_01_s1.gif" data-echo="https://www15.a8.net/0.gif?a8mat=3BK2FI+82JJZM+50+2HP601" alt="">
+                    <img border="0" width="336" height="280" alt="" class="lazyestload"
+                        src="../img/icon_loader_f_ww_01_s1.gif"
+                        data-src="https://www29.a8.net/svt/bgt?aid=200810574488&wid=001&eno=01&mid=s00000000018015066000&mc=1"></a>
+                <img border="0" width="1" height="1" class="lazyestload"
+                        src="../img/icon_loader_f_ww_01_s1.gif"
+                        data-src="https://www15.a8.net/0.gif?a8mat=3BK2FI+82JJZM+50+2HP601" alt="">
             </div>
             <section>
                 <h2 id="4">4.ウェブサイト制作</h2>
@@ -151,11 +174,19 @@
             </section>
             <div class="ads">
                 <a href="https://px.a8.net/svt/ejp?a8mat=3BK2FI+BB8IK2+CO4+15T9TD" rel="nofollow">
-                    <img border="0" width="350" height="240" alt="" src="../img/icon_loader_f_ww_01_s1.gif" data-echo="https://www20.a8.net/svt/bgt?aid=200810574684&wid=001&eno=01&mid=s00000001642007023000&mc=1"></a>
-                <img border="0" width="1" height="1" src="../img/icon_loader_f_ww_01_s1.gif" data-echo="https://www11.a8.net/0.gif?a8mat=3BK2FI+BB8IK2+CO4+15T9TD" alt="">
+                    <img border="0" width="350" height="240" alt="" class="lazyestload"
+                        src="../img/icon_loader_f_ww_01_s1.gif"
+                        data-src="https://www20.a8.net/svt/bgt?aid=200810574684&wid=001&eno=01&mid=s00000001642007023000&mc=1"></a>
+                <img border="0" width="1" height="1" class="lazyestload"
+                        src="../img/icon_loader_f_ww_01_s1.gif"
+                        data-src="https://www11.a8.net/0.gif?a8mat=3BK2FI+BB8IK2+CO4+15T9TD" alt="">
                 <a href="https://px.a8.net/svt/ejp?a8mat=3BK2FI+82JJZM+50+2HP601" rel="nofollow">
-                    <img border="0" width="336" height="280" alt="" src="../img/icon_loader_f_ww_01_s1.gif" data-echo="https://www29.a8.net/svt/bgt?aid=200810574488&wid=001&eno=01&mid=s00000000018015066000&mc=1"></a>
-                <img border="0" width="1" height="1" src="../img/icon_loader_f_ww_01_s1.gif" data-echo="https://www15.a8.net/0.gif?a8mat=3BK2FI+82JJZM+50+2HP601" alt="">
+                    <img border="0" width="336" height="280" alt="" class="lazyestload"
+                        src="../img/icon_loader_f_ww_01_s1.gif"
+                        data-src="https://www29.a8.net/svt/bgt?aid=200810574488&wid=001&eno=01&mid=s00000000018015066000&mc=1"></a>
+                <img border="0" width="1" height="1" class="lazyestload"
+                        src="../img/icon_loader_f_ww_01_s1.gif"
+                        data-src="https://www15.a8.net/0.gif?a8mat=3BK2FI+82JJZM+50+2HP601" alt="">
             </div>
 
             <aside id="prev-next">
@@ -172,37 +203,51 @@
             <div id="ads-side">
                 <div>
                     <a href="https://px.a8.net/svt/ejp?a8mat=3BK2FI+BB8IK2+CO4+15RCDD" rel="nofollow">
-                        <img border="0" width="160" height="600" alt="" src="../img/icon_loader_f_ww_01_s1.gif" data-echo="https://www28.a8.net/svt/bgt?aid=200810574684&wid=001&eno=01&mid=s00000001642007014000&mc=1"></a>
+                        <img border="0" width="160" height="600" alt="" class="lazyestload"
+                        src="../img/icon_loader_f_ww_01_s1.gif"
+                        data-src="https://www28.a8.net/svt/bgt?aid=200810574684&wid=001&eno=01&mid=s00000001642007014000&mc=1"></a>
                     <img border="0" width="1" height="1" src="../img/icon_loader_f_ww_01_s1.gif" data-echo="https://www15.a8.net/0.gif?a8mat=3BK2FI+BB8IK2+CO4+15RCDD" alt="">
                 </div>
                 <div>
                     <a href="https://px.a8.net/svt/ejp?a8mat=3BK2FI+82JJZM+50+2HGLCX" rel="nofollow">
-                        <img border="0" width="120" height="600" alt="" src="../img/icon_loader_f_ww_01_s1.gif" data-echo="https://www28.a8.net/svt/bgt?aid=200810574488&wid=001&eno=01&mid=s00000000018015026000&mc=1"></a>
+                        <img border="0" width="120" height="600" alt="" class="lazyestload"
+                        src="../img/icon_loader_f_ww_01_s1.gif"
+                        data-src="https://www28.a8.net/svt/bgt?aid=200810574488&wid=001&eno=01&mid=s00000000018015026000&mc=1"></a>
                     <img border="0" width="1" height="1" src="../img/icon_loader_f_ww_01_s1.gif" data-echo="https://www18.a8.net/0.gif?a8mat=3BK2FI+82JJZM+50+2HGLCX" alt="">
                 </div>
                 <div>
                     <a href="https://px.a8.net/svt/ejp?a8mat=3BK37P+5KN3N6+42SG+6FP1T" rel="nofollow">
-                        <img border="0" width="300" height="250" alt="" src="../img/icon_loader_f_ww_01_s1.gif" data-echo="https://www27.a8.net/svt/bgt?aid=200811589337&wid=001&eno=01&mid=s00000019024001081000&mc=1"></a>
+                        <img border="0" width="300" height="250" alt="" class="lazyestload"
+                        src="../img/icon_loader_f_ww_01_s1.gif"
+                        data-src="https://www27.a8.net/svt/bgt?aid=200811589337&wid=001&eno=01&mid=s00000019024001081000&mc=1"></a>
                     <img border="0" width="1" height="1" src="../img/icon_loader_f_ww_01_s1.gif" data-echo="https://www17.a8.net/0.gif?a8mat=3BK37P+5KN3N6+42SG+6FP1T" alt="">
                 </div>
                 <div>
                     <a href="https://px.a8.net/svt/ejp?a8mat=3BK37O+BN56NM+348+6FHC1" rel="nofollow">
-                        <img border="0" width="120" height="600" alt="" src="../img/icon_loader_f_ww_01_s1.gif" data-echo="https://www26.a8.net/svt/bgt?aid=200811588704&wid=001&eno=01&mid=s00000000404001080000&mc=1"></a>
+                        <img border="0" width="120" height="600" alt="" class="lazyestload"
+                        src="../img/icon_loader_f_ww_01_s1.gif"
+                        data-src="https://www26.a8.net/svt/bgt?aid=200811588704&wid=001&eno=01&mid=s00000000404001080000&mc=1"></a>
                     <img border="0" width="1" height="1" src="../img/icon_loader_f_ww_01_s1.gif" data-echo="https://www14.a8.net/0.gif?a8mat=3BK37O+BN56NM+348+6FHC1" alt="">
                 </div>
                 <div>
                     <a href="https://px.a8.net/svt/ejp?a8mat=3BK37O+BKRG8I+CO4+6H729" rel="nofollow">
-                        <img border="0" width="120" height="600" alt="" src="../img/icon_loader_f_ww_01_s1.gif" data-echo="https://www20.a8.net/svt/bgt?aid=200811588700&wid=001&eno=01&mid=s00000001642001088000&mc=1"></a>
+                        <img border="0" width="120" height="600" alt="" class="lazyestload"
+                        src="../img/icon_loader_f_ww_01_s1.gif"
+                        data-src="https://www20.a8.net/svt/bgt?aid=200811588700&wid=001&eno=01&mid=s00000001642001088000&mc=1"></a>
                     <img border="0" width="1" height="1" src="../img/icon_loader_f_ww_01_s1.gif" data-echo="https://www12.a8.net/0.gif?a8mat=3BK37O+BKRG8I+CO4+6H729" alt="">
                 </div>
                 <div>
                     <a href="https://px.a8.net/svt/ejp?a8mat=3BK37O+BKRG8I+CO4+6HES1" rel="nofollow">
-                        <img border="0" width="120" height="600" alt="" src="../img/icon_loader_f_ww_01_s1.gif" data-echo="https://www29.a8.net/svt/bgt?aid=200811588700&wid=001&eno=01&mid=s00000001642001089000&mc=1"></a>
+                        <img border="0" width="120" height="600" alt="" class="lazyestload"
+                        src="../img/icon_loader_f_ww_01_s1.gif"
+                        data-src="https://www29.a8.net/svt/bgt?aid=200811588700&wid=001&eno=01&mid=s00000001642001089000&mc=1"></a>
                     <img border="0" width="1" height="1" src="../img/icon_loader_f_ww_01_s1.gif" data-echo="https://www18.a8.net/0.gif?a8mat=3BK37O+BKRG8I+CO4+6HES1" alt="">
                 </div>
                 <div>
                     <a href="https://px.a8.net/svt/ejp?a8mat=3BK37P+5KN3N6+42SG+601S1" rel="nofollow">
-                        <img border="0" width="300" height="250" alt="" src="../img/icon_loader_f_ww_01_s1.gif" data-echo="https://www22.a8.net/svt/bgt?aid=200811589337&wid=001&eno=01&mid=s00000019024001008000&mc=1"></a>
+                        <img border="0" width="300" height="250" alt="" class="lazyestload"
+                        src="../img/icon_loader_f_ww_01_s1.gif"
+                        data-src="https://www22.a8.net/svt/bgt?aid=200811589337&wid=001&eno=01&mid=s00000019024001008000&mc=1"></a>
                     <img border="0" width="1" height="1" src="../img/icon_loader_f_ww_01_s1.gif" data-echo="https://www11.a8.net/0.gif?a8mat=3BK37P+5KN3N6+42SG+601S1" alt="">
                 </div>
             </div>
