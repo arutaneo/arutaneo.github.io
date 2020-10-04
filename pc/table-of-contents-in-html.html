@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/ fb# article: http://ogp.me/ns/ article#">
+    <meta charset="UTF-8">
+    <title>HTMLで目次の作り方</title>
+    <meta name="description" content="HTMLで目次の作り方をお教えします。">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="canonical" href="https://arutaneo.com/pc/table-of-contents-in-html.html">
+
+    <!--OGP-->
+    <meta property="og:url" content="https://arutaneo.com/pc/table-of-contents-in-html.html" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="HTMLで目次の作り方" />
+    <meta property="og:description" content="HTMLで目次の作り方をお教えします。" />
+    <meta property="og:site_name" content="Arutaneo" />
+    <meta property="og:image" content="https://arutaneo.com/pc/table-of-contents-in-html-img/table-of-contents-in-html-pc.jpeg" />
+    <meta property="fb:app_id" content="3475041655881051">
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@arutaneo" />
+
+    <!--ファビコン-->
+    <link rel="apple-touch-icon" sizes="180x180" href="../img//apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../img/favicon-16x16.png">
+    <link rel="manifest" href="../img/site.webmanifest">
+    <link rel="mask-icon" href="../img/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+    <!--フォント-->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+    <!--CSS-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css">
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+
+    <!--jQuery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script>$(function () { $("#header").load("https://arutaneo.com/include/header.html"); $("#side").load("https://arutaneo.com/include/side.html"); $("#sub").load("https://arutaneo.com/include/sub.html"); $("#footer").load("https://arutaneo.com/include/footer.html"); });</script>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-165447369-3"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-165447369-3');
+    </script>
+
+
+</head>
+
+<body>
+    <!--ヘッダー(始)-->
+    <div id="header"></div>
+    <!--ヘッダー(終)-->
+
+    <div id="container">
+        <!--メイン(始)-->
+        <main>
+            <h1>HTMLで目次の作り方</h1>
+
+            <!--更新日(始)-->
+            <div id="main-text-date">
+                <script>var day = new Date(document.lastModified); var y = day.getFullYear(); var m = day.getMonth() + 1; var d = day.getDate(); document.write("Last Update: " + y + "年" + m + "月" + d + "日");</script>
+            </div>
+            <!--更新日(終)-->
+
+            <p class="img">
+                <picture>
+                    <source type="image/webp" media="(min-width: 960px)" srcset="table-of-contents-in-html-img/table-of-contents-in-html-pc.webp">
+                    <source type="image/webp" media="(min-width: 481px)" srcset="table-of-contents-in-html-img/table-of-contents-in-html-tablet.webp">
+                    <source type="image/webp" media="(max-width: 480px)" srcset="table-of-contents-in-html-img/table-of-contents-in-html-mobile.webp">
+                    <source type="image/jpeg" media="(min-width: 960px)" srcset="table-of-contents-in-html-img/table-of-contents-in-html-pc.jpeg">
+                    <source type="image/jpeg" media="(min-width: 481px)" srcset="table-of-contents-in-html-img/table-of-contents-in-html-tablet.jpeg">
+                    <source type="image/jpeg" media="(max-width: 480px)" srcset="table-of-contents-in-html-img/table-of-contents-in-html-mobile.jpeg">
+                    <img src="table-of-contents-in-html-img/table-of-contents-in-html-pc.jpeg" alt="table-of-contents-in-html-img">
+                </picture>
+            </p>
+
+            <section>
+                <p>HTMLで目次の作り方をお教えします。</p>
+            </section>
+
+            <div id="toc-container">
+                <p class="toc-title">目次</p>
+                <ol class="toc-list">
+                    <li><a href="#1">目次サンプル</a></li>
+                    <li><a href="#2">HTML解説</a></li>
+                    <li><a href="#3">CSS解説</a></li>
+                    <li><a href="#4">まとめ</a></li>
+                </ol>
+            </div>
+            <div class="ads">
+                <a href="https://px.a8.net/svt/ejp?a8mat=3BK2FI+BB8IK2+CO4+15T9TD" rel="nofollow">
+                    <img border="0" width="350" height="240" alt="" class="lazyestload"
+                        src="../img/icon_loader_f_ww_01_s1.gif"
+                        data-src="https://www20.a8.net/svt/bgt?aid=200810574684&wid=001&eno=01&mid=s00000001642007023000&mc=1"></a>
+                <img border="0" width="1" height="1" class="lazyestload"
+                        src="../img/icon_loader_f_ww_01_s1.gif"
+                        data-src="https://www11.a8.net/0.gif?a8mat=3BK2FI+BB8IK2+CO4+15T9TD" alt="">
+                <a href="https://px.a8.net/svt/ejp?a8mat=3BK2FI+82JJZM+50+2HP601" rel="nofollow">
+                    <img border="0" width="336" height="280" alt="" class="lazyestload"
+                        src="../img/icon_loader_f_ww_01_s1.gif"
+                        data-src="https://www29.a8.net/svt/bgt?aid=200810574488&wid=001&eno=01&mid=s00000000018015066000&mc=1"></a>
+                <img border="0" width="1" height="1" class="lazyestload"
+                        src="../img/icon_loader_f_ww_01_s1.gif"
+                        data-src="https://www15.a8.net/0.gif?a8mat=3BK2FI+82JJZM+50+2HP601" alt="">
+            </div>
+            <section>
+                <h2 id="1">1.目次サンプル</h2>
+                <p>今回作る目次はこちら。</p>
+                <div id="toc-container">
+                    <p class="toc-title">目次</p>
+                    <ol class="toc-list">
+                        <li><a href="#">???????????????????????????</a></li>
+                        <li><a href="#">???????????????????????????</a></li>
+                        <li><a href="#">???????????????????????????</a></li>
+                        <li><a href="#">???????????????????????????</a></li>
+                        <li><a href="#">???????????????????????????</a></li>
+                        <li><a href="#">???????????????????????????</a></li>
+                        <li><a href="#">まとめ</a></li>
+                    </ol>
+                </div>
+                <p><span class="marker-under-red">HTMLはこちら。</span></p>
+                            <pre><code>&lt;div id="toc-container"&gt;
+    &lt;p class="toc-title"&gt;目次&lt;/p&gt;
+    &lt;ol class="toc-list"&gt;
+        &lt;li&gt;&lt;a href="#1"&gt;???????????????????????????&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href="#2"&gt;???????????????????????????&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href="#3"&gt;???????????????????????????&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href="#4"&gt;???????????????????????????&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href="#5"&gt;???????????????????????????&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href="#6"&gt;???????????????????????????&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href="#7"&gt;まとめ&lt;/a&gt;&lt;/li&gt;
+    &lt;/ol&gt;
+&lt;/div&gt;</code></pre>
+                <p><span class="marker-under-red">CSSはこちら。</span></p>
+                    <pre><code>#toc-container {
+    background: white, none repeat scroll 0 0;
+    border: 1px solid skyblue;
+    display: table;
+    font-size: 95%;
+    margin: 0 auto 0 auto;
+    padding: 10px;
+    width: auto;
+}
+
+.toc-title {
+    font-weight: 700;
+    text-align: center;
+}
+
+#toc-container li,
+#toc-container ol,
+#toc-container ol li {
+    list-style-position: outside;
+    margin-left: 1em;
+    margin-right: 1em;
+    padding-left: 0;
+}</code></pre>  
+            </section>
+            <div class="ads">
+                <a href="https://px.a8.net/svt/ejp?a8mat=3BK2FI+BB8IK2+CO4+15T9TD" rel="nofollow">
+                    <img border="0" width="350" height="240" alt="" class="lazyestload"
+                        src="../img/icon_loader_f_ww_01_s1.gif"
+                        data-src="https://www20.a8.net/svt/bgt?aid=200810574684&wid=001&eno=01&mid=s00000001642007023000&mc=1"></a>
+                <img border="0" width="1" height="1" class="lazyestload"
+                        src="../img/icon_loader_f_ww_01_s1.gif"
+                        data-src="https://www11.a8.net/0.gif?a8mat=3BK2FI+BB8IK2+CO4+15T9TD" alt="">
+                <a href="https://px.a8.net/svt/ejp?a8mat=3BK2FI+82JJZM+50+2HP601" rel="nofollow">
+                    <img border="0" width="336" height="280" alt="" class="lazyestload"
+                        src="../img/icon_loader_f_ww_01_s1.gif"
+                        data-src="https://www29.a8.net/svt/bgt?aid=200810574488&wid=001&eno=01&mid=s00000000018015066000&mc=1"></a>
+                <img border="0" width="1" height="1" class="lazyestload"
+                        src="../img/icon_loader_f_ww_01_s1.gif"
+                        data-src="https://www15.a8.net/0.gif?a8mat=3BK2FI+82JJZM+50+2HP601" alt="">
+            </div>
+            <section>
+                <h2 id="2">2.HTMLの解説</h2>
+                <p>まず、HTMLのコードの解説から。</p>
+                <p><span class="marker-under-blue">&lt;div&gt;</span>で全体を覆います。idを目次全体という意味の『<span class="marker-under-blue">toc-container</span>』にします。</p>
+                <p>次に<span class="marker-under-blue">&lt;p&gt;</span>で目次タイトルを書きます。idを目次のタイトルという意味の『<span class="marker-under-blue">toc-title</span>』にします。</p>
+                <p>次に<span class="marker-under-blue">&lt;ol&gt;</span>と<span class="marker-under-blue">&lt;li&gt;</span>で<span class="marker-under-blue">番号付けリスト</span>を書きます。目次の中身ですね。それぞれ<a>でリンクするようにします。もし複数ページのサイトを作っていて，例えば2ページ目に#3のリンク先がある場合，</p>
+                <pre><code>&lt;a href=”aiueo-2.html#3”&gt;</code></pre>
+                <p>といったようにすれば繋がります。</p>
+                <p>リンク先の方では単一ページの場合と変わらずに</p>
+                <pre><code>&lt;h2 id="3"&gt;3.???????????????????????????&lt;/h2&gt;</code></pre>
+                <p>とすればいいです。</p>
+            </section>
+            <div class="ads">
+                <a href="https://px.a8.net/svt/ejp?a8mat=3BK2FI+BB8IK2+CO4+15T9TD" rel="nofollow">
+                    <img border="0" width="350" height="240" alt="" class="lazyestload"
+                        src="../img/icon_loader_f_ww_01_s1.gif"
+                        data-src="https://www20.a8.net/svt/bgt?aid=200810574684&wid=001&eno=01&mid=s00000001642007023000&mc=1"></a>
+                <img border="0" width="1" height="1" class="lazyestload"
+                        src="../img/icon_loader_f_ww_01_s1.gif"
+                        data-src="https://www11.a8.net/0.gif?a8mat=3BK2FI+BB8IK2+CO4+15T9TD" alt="">
+                <a href="https://px.a8.net/svt/ejp?a8mat=3BK2FI+82JJZM+50+2HP601" rel="nofollow">
+                    <img border="0" width="336" height="280" alt="" class="lazyestload"
+                        src="../img/icon_loader_f_ww_01_s1.gif"
+                        data-src="https://www29.a8.net/svt/bgt?aid=200810574488&wid=001&eno=01&mid=s00000000018015066000&mc=1"></a>
+                <img border="0" width="1" height="1" class="lazyestload"
+                        src="../img/icon_loader_f_ww_01_s1.gif"
+                        data-src="https://www15.a8.net/0.gif?a8mat=3BK2FI+82JJZM+50+2HP601" alt="">
+            </div>
+            <section>
+                <h2 id="3">3.CSSの解説</h2>
+                <p>次に，CSSの解説です。目次全体の『<span class="marker-under-blue">#toc-container</span>』について。</p>
+                <p>『<span class="marker-under-blue">border</span>』は枠線を1pxで1本線(solid)でスカイブルー色(skyblue)で表示します。</p>
+                <p>『<span class="marker-under-blue">margin: 0 auto 0 auto;</span>』で目次を中央に表示します。上下の空白を0，左右をオートにしています。</p>
+                <p>『<span class="marker-under-blue">padding</span>』で10pxの空白を枠線内側に表示します。</p>
+                <p>『<span class="marker-under-blue">width</span>』は幅をオート（auto）表示します。</p>
+                <p>『<span class="marker-under-blue">.toc-title</span>』は『<span class="marker-under-blue">font-weight: 700;</span>』で目次タイトル名太字にし，『<span class="marker-under-blue">text-align: center;</span>』で中央に来るようにしています。</p>
+                <p>『<span class="marker-under-blue">#toc-container li,#toc-container ol,#toc-container ol li</span>』では『<span class="marker-under-blue">list-style-position: outside;</span>』で1や2などのリストの番号が左端に固定されるようにしています。『<span class="marker-under-blue">inside</span>』だとリストの頭につき位置がバラバラになります。『<span class="marker-under-blue">margin-left: 1em;</span>』や『<span class="marker-under-blue">margin-right: 1em;</span>』でリストの左右の位置を調整します。『<span class="marker-under-blue">padding-left: 0;</span>』で間隔の調整をします。</p>
+            </section>
+            <div class="ads">
+                <a href="https://px.a8.net/svt/ejp?a8mat=3BK2FI+BB8IK2+CO4+15T9TD" rel="nofollow">
+                    <img border="0" width="350" height="240" alt="" class="lazyestload"
+                        src="../img/icon_loader_f_ww_01_s1.gif"
+                        data-src="https://www20.a8.net/svt/bgt?aid=200810574684&wid=001&eno=01&mid=s00000001642007023000&mc=1"></a>
+                <img border="0" width="1" height="1" class="lazyestload"
+                        src="../img/icon_loader_f_ww_01_s1.gif"
+                        data-src="https://www11.a8.net/0.gif?a8mat=3BK2FI+BB8IK2+CO4+15T9TD" alt="">
+                <a href="https://px.a8.net/svt/ejp?a8mat=3BK2FI+82JJZM+50+2HP601" rel="nofollow">
+                    <img border="0" width="336" height="280" alt="" class="lazyestload"
+                        src="../img/icon_loader_f_ww_01_s1.gif"
+                        data-src="https://www29.a8.net/svt/bgt?aid=200810574488&wid=001&eno=01&mid=s00000000018015066000&mc=1"></a>
+                <img border="0" width="1" height="1" class="lazyestload"
+                        src="../img/icon_loader_f_ww_01_s1.gif"
+                        data-src="https://www15.a8.net/0.gif?a8mat=3BK2FI+82JJZM+50+2HP601" alt="">
+            </div>
+            <section>
+                <h2 id="4">4.まとめ</h2>
+                <ol>
+                    <li><a href="#1">目次サンプル</a></li>
+                    <li><a href="#2">HTML解説</a></li>
+                    <li><a href="#3">CSS解説</a></li>
+                </ol>
+                <p>参考になれば幸いです。</p>
+                <p>それでは良いウェブライフを！</p>
+            </section>
+            <div class="ads">
+                <a href="https://px.a8.net/svt/ejp?a8mat=3BK2FI+BB8IK2+CO4+15T9TD" rel="nofollow">
+                    <img border="0" width="350" height="240" alt="" class="lazyestload"
+                        src="../img/icon_loader_f_ww_01_s1.gif"
+                        data-src="https://www20.a8.net/svt/bgt?aid=200810574684&wid=001&eno=01&mid=s00000001642007023000&mc=1"></a>
+                <img border="0" width="1" height="1" class="lazyestload"
+                        src="../img/icon_loader_f_ww_01_s1.gif"
+                        data-src="https://www11.a8.net/0.gif?a8mat=3BK2FI+BB8IK2+CO4+15T9TD" alt="">
+                <a href="https://px.a8.net/svt/ejp?a8mat=3BK2FI+82JJZM+50+2HP601" rel="nofollow">
+                    <img border="0" width="336" height="280" alt="" class="lazyestload"
+                        src="../img/icon_loader_f_ww_01_s1.gif"
+                        data-src="https://www29.a8.net/svt/bgt?aid=200810574488&wid=001&eno=01&mid=s00000000018015066000&mc=1"></a>
+                <img border="0" width="1" height="1" class="lazyestload"
+                        src="../img/icon_loader_f_ww_01_s1.gif"
+                        data-src="https://www15.a8.net/0.gif?a8mat=3BK2FI+82JJZM+50+2HP601" alt="">
+            </div>
+
+            <aside id="next">
+                <p><a href="???????????????????????????" class="btn btn--orange">次へ&Rightarrow;</a></p>
+            </aside>
+
+        </main>
+        <!--メイン(終)-->
+
+        <!--サイド(始)-->
+        <div id="sideplus">
+            <div id="side"></div>
+            <div id="ads-side">
+                <div>
+                    <a href="https://px.a8.net/svt/ejp?a8mat=3BK2FI+BB8IK2+CO4+15RCDD" rel="nofollow">
+                        <img border="0" width="160" height="600" alt="" class="lazyestload"
+                        src="../img/icon_loader_f_ww_01_s1.gif"
+                        data-src="https://www28.a8.net/svt/bgt?aid=200810574684&wid=001&eno=01&mid=s00000001642007014000&mc=1"></a>
+                    <img border="0" width="1" height="1" class="lazyestload"
+                        src="../img/icon_loader_f_ww_01_s1.gif"
+                        data-src="https://www15.a8.net/0.gif?a8mat=3BK2FI+BB8IK2+CO4+15RCDD" alt="">
+                </div>
+                <div>
+                    <a href="https://px.a8.net/svt/ejp?a8mat=3BK2FI+82JJZM+50+2HGLCX" rel="nofollow">
+                        <img border="0" width="120" height="600" alt="" class="lazyestload"
+                        src="../img/icon_loader_f_ww_01_s1.gif"
+                        data-src="https://www28.a8.net/svt/bgt?aid=200810574488&wid=001&eno=01&mid=s00000000018015026000&mc=1"></a>
+                    <img border="0" width="1" height="1" class="lazyestload"
+                        src="../img/icon_loader_f_ww_01_s1.gif"
+                        data-src="https://www18.a8.net/0.gif?a8mat=3BK2FI+82JJZM+50+2HGLCX" alt="">
+                </div>
+                <div>
+                    <a href="https://px.a8.net/svt/ejp?a8mat=3BK37P+5KN3N6+42SG+6FP1T" rel="nofollow">
+                        <img border="0" width="300" height="250" alt="" class="lazyestload"
+                        src="../img/icon_loader_f_ww_01_s1.gif"
+                        data-src="https://www27.a8.net/svt/bgt?aid=200811589337&wid=001&eno=01&mid=s00000019024001081000&mc=1"></a>
+                    <img border="0" width="1" height="1" class="lazyestload"
+                        src="../img/icon_loader_f_ww_01_s1.gif"
+                        data-src="https://www17.a8.net/0.gif?a8mat=3BK37P+5KN3N6+42SG+6FP1T" alt="">
+                </div>
+                <div>
+                    <a href="https://px.a8.net/svt/ejp?a8mat=3BK37O+BN56NM+348+6FHC1" rel="nofollow">
+                        <img border="0" width="120" height="600" alt="" class="lazyestload"
+                        src="../img/icon_loader_f_ww_01_s1.gif"
+                        data-src="https://www26.a8.net/svt/bgt?aid=200811588704&wid=001&eno=01&mid=s00000000404001080000&mc=1"></a>
+                    <img border="0" width="1" height="1" class="lazyestload"
+                        src="../img/icon_loader_f_ww_01_s1.gif"
+                        data-src="https://www14.a8.net/0.gif?a8mat=3BK37O+BN56NM+348+6FHC1" alt="">
+                </div>
+                <div>
+                    <a href="https://px.a8.net/svt/ejp?a8mat=3BK37O+BKRG8I+CO4+6H729" rel="nofollow">
+                        <img border="0" width="120" height="600" alt="" class="lazyestload"
+                        src="../img/icon_loader_f_ww_01_s1.gif"
+                        data-src="https://www20.a8.net/svt/bgt?aid=200811588700&wid=001&eno=01&mid=s00000001642001088000&mc=1"></a>
+                    <img border="0" width="1" height="1" class="lazyestload"
+                        src="../img/icon_loader_f_ww_01_s1.gif"
+                        data-src="https://www12.a8.net/0.gif?a8mat=3BK37O+BKRG8I+CO4+6H729" alt="">
+                </div>
+                <div>
+                    <a href="https://px.a8.net/svt/ejp?a8mat=3BK37O+BKRG8I+CO4+6HES1" rel="nofollow">
+                        <img border="0" width="120" height="600" alt="" class="lazyestload"
+                        src="../img/icon_loader_f_ww_01_s1.gif"
+                        data-src="https://www29.a8.net/svt/bgt?aid=200811588700&wid=001&eno=01&mid=s00000001642001089000&mc=1"></a>
+                    <img border="0" width="1" height="1" class="lazyestload"
+                        src="../img/icon_loader_f_ww_01_s1.gif"
+                        data-src="https://www18.a8.net/0.gif?a8mat=3BK37O+BKRG8I+CO4+6HES1" alt="">
+                </div>
+                <div>
+                    <a href="https://px.a8.net/svt/ejp?a8mat=3BK37O+BKRG8I+CO4+686ZL" rel="nofollow">
+                        <img border="0" width="120" height="600" alt="" class="lazyestload"
+                        src="../img/icon_loader_f_ww_01_s1.gif"
+                        data-src="https://www23.a8.net/svt/bgt?aid=200811588700&wid=001&eno=01&mid=s00000001642001046000&mc=1"></a>
+                    <img border="0" width="1" height="1" class="lazyestload"
+                        src="../img/icon_loader_f_ww_01_s1.gif"
+                        data-src="https://www18.a8.net/0.gif?a8mat=3BK37O+BKRG8I+CO4+686ZL" alt="">
+                </div>
+            </div>
+        </div>
+        <!--サイド(終)-->
+    </div>
+
+    <!--サブコラム(始)-->
+    <div id="sub"></div>
+    <!--サブコラム(終)-->
+
+    <!--フッター(始)-->
+    <div id="footer"></div>
+    <!--フッター(終)-->
+</body>
+
+</html>
