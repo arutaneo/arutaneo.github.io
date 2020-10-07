@@ -278,6 +278,7 @@
     }
     /*次へ(終)*/
 
+    /*表(始)*/
     table {
         border-collapse: collapse;
         margin: 0 auto;
@@ -318,7 +319,35 @@
       table tr:hover{
         background-color: #d4faff;
       }
+      /*表(終)*/
     
+      /*リンク(始)*/
+      a:hover {
+        text-decoration: none;
+    }
+    
+    a[target="_blank"] {
+        padding-left: 1.25em;
+        position: relative;
+    }
+    
+    a[target="_blank"]::before {
+        content:"\f35d";
+        font-family: "Font Awesome 5 Free";
+        -moz-osx-font-smoothing: grayscale;
+        -webkit-font-smoothing: antialiased;
+        display: inline-block;
+        font-style: normal;
+        font-variant: normal;
+        text-rendering: auto;
+        line-height: 1;
+        font-weight: 900;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+      /*リンク(終)*/
+
     .center {
         text-align: center;
     }
