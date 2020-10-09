@@ -1,5 +1,30 @@
     /*全体のレイアウト(始)*/
-    
+    @font-face {
+        font-family: 'Noto Sans CJK JP Subset';
+        font-style: normal;
+        font-weight: 400;
+        src: local('Noto Sans CJK JP'),
+          local('NotoSansCJKjp-Regular'),
+          local('NotoSansJP-Regular'),
+          url('../fonts/NotoSansCJKjp-Regular.woff2') format('woff2'),
+      }
+      
+      @font-face {
+        font-family: 'Noto Sans CJK JP Subset';
+        font-style: normal;
+        font-weight: 700;
+        src: local('NotoSansCJKjp-Bold'),
+          local('NotoSansJP-Bold'),
+          url('../fonts/NotoSansCJKjp-Bold.woff2') format('woff2'),
+      }
+
+    body {
+        font-family: 'Noto Sans', 'Noto Sans CJK JP', 'Noto Sans CJK JP Subset', sans-serif;
+        width: 100%;
+        margin: 0 auto;
+        background: #ddd;
+    }
+
     ol {
         list-style-type: decimal;
         margin-left: 20px;
@@ -24,13 +49,6 @@
         border-color: skyblue;
         border-width: 6px;
         overflow: scroll;
-    }
-    
-    body {
-        font-family: 'Roboto', 'Noto Sans JP';
-        width: 100%;
-        margin: 0 auto;
-        background: #ddd;
     }
     
     header {
