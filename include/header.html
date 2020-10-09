@@ -11,7 +11,12 @@
         </ul>
     </nav>
     <picture>
-        <source type="image/webp" src="https://arutaneo.com/img/arutaneo-back.webp">
-        <img src="https://arutaneo.com/img/arutaneo-back.jpeg" alt="Arutaneo/アルターネオ">
+        <source type="image/webp" media="(min-width: 960px)" srcset="../img/arutaneo-back-pc.webp">
+        <source type="image/webp" media="(min-width: 481px)" srcset="../img/arutaneo-back-tablet.webp">
+        <source type="image/webp" media="(max-width: 480px)" srcset="../img/arutaneo-back-mobile.webp">
+        <source type="image/jpeg" media="(min-width: 960px)" srcset="../img/arutaneo-back-pc.jpeg">
+        <source type="image/jpeg" media="(min-width: 481px)" srcset="../img/arutaneo-back-tablet.jpeg">
+        <source type="image/jpeg" media="(max-width: 480px)" srcset="../img/arutaneo-back-mobile.jpeg">
+        <img src="../img/arutaneo-back-pc.jpeg" alt="arutaneo-back">
     </picture>
 </header>
