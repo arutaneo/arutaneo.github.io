@@ -3,49 +3,49 @@ RewriteCond %{THE_REQUEST} ^.*/index.html
 RewriteRule ^(.*)index.html$ https://arutaneo.com/$1 [R=301,L]
 
 RewriteEngine on
-RewriteRule ^electrical-and-electronic/psim-download-1.html$ https://arutaneo.com/electrical-and-electronic/psim-download.html [L,R=301] 
+RewriteRule ^psim-download-1.html$ https://arutaneo.com/electrical-and-electronic/psim-download.html [L,R=301] 
 
 RewriteEngine on
-RewriteRule ^electrical-and-electronic/psim-download-2.html$ https://arutaneo.com/electrical-and-electronic/psim-download.html [L,R=301] 
+RewriteRule ^psim-download-2.html$ https://arutaneo.com/electrical-and-electronic/psim-download.html [L,R=301] 
 
 RewriteEngine on
-RewriteRule ^pc/the-best-computer-for-teleworking-1.html$ https://arutaneo.com/pc/the-best-computer-for-teleworking.html [L,R=301] 
+RewriteRule ^the-best-computer-for-teleworking-1.html$ https://arutaneo.com/pc/the-best-computer-for-teleworking.html [L,R=301] 
 
 RewriteEngine on
-RewriteRule ^pc/the-best-computer-for-teleworking-2.html$ https://arutaneo.com/pc/the-best-computer-for-teleworking.html [L,R=301] 
+RewriteRule ^the-best-computer-for-teleworking-2.html$ https://arutaneo.com/pc/the-best-computer-for-teleworking.html [L,R=301] 
 
 RewriteEngine on
-RewriteRule ^pc/the-best-rental-server-for-wordpress-1.html$ https://arutaneo.com/pc/the-best-rental-server-for-wordpress.html [L,R=301] 
+RewriteRule ^the-best-rental-server-for-wordpress-1.html$ https://arutaneo.com/pc/the-best-rental-server-for-wordpress.html [L,R=301] 
 
 RewriteEngine on
-RewriteRule ^pc/the-best-rental-server-for-wordpress-2.html$ https://arutaneo.com/pc/the-best-rental-server-for-wordpress.html [L,R=301] 
+RewriteRule ^the-best-rental-server-for-wordpress-2.html$ https://arutaneo.com/pc/the-best-rental-server-for-wordpress.html [L,R=301] 
 
 RewriteEngine on
-RewriteRule ^pc/the-cheapest-gaming-pc-for-fortnite-1.html$ https://arutaneo.com/pc/the-cheapest-gaming-pc-for-fortnite.html [L,R=301] 
+RewriteRule ^the-cheapest-gaming-pc-for-fortnite-1.html$ https://arutaneo.com/pc/the-cheapest-gaming-pc-for-fortnite.html [L,R=301] 
 
 RewriteEngine on
-RewriteRule ^pc/the-cheapest-gaming-pc-for-fortnite-2.html$ https://arutaneo.com/pc/the-cheapest-gaming-pc-for-fortnite.html [L,R=301] 
+RewriteRule ^the-cheapest-gaming-pc-for-fortnite-2.html$ https://arutaneo.com/pc/the-cheapest-gaming-pc-for-fortnite.html [L,R=301] 
 
 RewriteEngine on
-RewriteRule ^pc/the-cheapest-gaming-pc-for-fortnite-3.html$ https://arutaneo.com/pc/the-cheapest-gaming-pc-for-fortnite.html [L,R=301] 
+RewriteRule ^the-cheapest-gaming-pc-for-fortnite-3.html$ https://arutaneo.com/pc/the-cheapest-gaming-pc-for-fortnite.html [L,R=301] 
 
 RewriteEngine on
-RewriteRule ^pc/the-lowest-website-1.html$ https://arutaneo.com/pc/the-lowest-website.html [L,R=301] 
+RewriteRule ^the-lowest-website-1.html$ https://arutaneo.com/pc/the-lowest-website.html [L,R=301] 
 
 RewriteEngine on
-RewriteRule ^pc/the-lowest-website-2.html$ https://arutaneo.com/pc/the-lowest-website.html [L,R=301] 
+RewriteRule ^the-lowest-website-2.html$ https://arutaneo.com/pc/the-lowest-website.html [L,R=301] 
 
 RewriteEngine on
-RewriteRule ^pc/the-lowest-website-3.html$ https://arutaneo.com/pc/the-lowest-website.html [L,R=301] 
+RewriteRule ^the-lowest-website-3.html$ https://arutaneo.com/pc/the-lowest-website.html [L,R=301] 
 
 RewriteEngine on
-RewriteRule ^pc/website-common-load-1.html$ https://arutaneo.com/pc/website-common-load.html [L,R=301] 
+RewriteRule ^website-common-load-1.html$ https://arutaneo.com/pc/website-common-load.html [L,R=301] 
 
 RewriteEngine on
-RewriteRule ^pc/website-common-load-2.html$ https://arutaneo.com/pc/website-common-load.html [L,R=301] 
+RewriteRule ^website-common-load-2.html$ https://arutaneo.com/pc/website-common-load.html [L,R=301] 
 
 RewriteEngine on
-RewriteRule ^road-bike/the-strongest-road-bike-1.html$ https://arutaneo.com/road-bike/the-strongest-road-bike.html [L,R=301] 
+RewriteRule ^the-strongest-road-bike-1.html$ https://arutaneo.com/road-bike/the-strongest-road-bike.html [L,R=301] 
 
 RewriteEngine on
-RewriteRule ^road-bike/the-strongest-road-bike-2.html$ https://arutaneo.com/road-bike/the-strongest-road-bike.html [L,R=301] 
+RewriteRule ^the-strongest-road-bike-2.html$ https://arutaneo.com/road-bike/the-strongest-road-bike.html [L,R=301] 
